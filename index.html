@@ -1,0 +1,1301 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NoveRosso Restaurant · Cucina italiana contemporanea a Genova Foce</title>
+<meta name="description" content="NoveRosso, Via Casaregis 9R a Genova Foce: cucina italiana contemporanea, menù stagionale, sala privé. Aperti da mercoledì a lunedì, pranzo e cena.">
+<!-- Anteprima di redesign non ufficiale: non indicizzare -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#111012">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="NoveRosso Restaurant · Genova Foce">
+<meta property="og:description" content="Cucina italiana contemporanea in Via Casaregis 9R. Anteprima di redesign.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111012'/%3E%3Crect x='20' y='6' width='24' height='52' rx='12' fill='none' stroke='%23A5111A' stroke-width='3.5'/%3E%3Ctext x='32' y='30' font-family='Arial Narrow,Arial' font-size='17' fill='%23A5111A' text-anchor='middle'%3E9%3C/text%3E%3Ctext x='32' y='49' font-family='Arial Narrow,Arial' font-size='17' fill='%23A5111A' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="font-bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font-instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="hero-sala-1920.webp" media="(min-width: 700px)">
+<link rel="preload" as="image" href="sala-finestre-720.webp" media="(max-width: 699px)">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "NoveRosso Restaurant",
+  "servesCuisine": "Cucina italiana contemporanea",
+  "telephone": "+39 010 312533",
+  "email": "contact@noverosso.it",
+  "address": {"@type": "PostalAddress", "streetAddress": "Via Giuseppe Casaregis 9R", "postalCode": "16129", "addressLocality": "Genova", "addressRegion": "GE", "addressCountry": "IT"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 44.3954378, "longitude": 8.9492055},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "14:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "19:00", "closes": "22:30"}
+  ],
+  "acceptsReservations": true,
+  "sameAs": ["https://www.instagram.com/noverosso9r/"]
+}
+</script>
+<script>
+  (function(){var r=document.documentElement;r.classList.add('js');
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('has-motion');
+  setTimeout(function(){if(!r.dataset.motionReady){r.classList.remove('has-motion')}},4000)}})();
+</script>
+<style>
+/* ---------- Font (locali, nessuna richiesta a terzi) ---------- */
+@font-face{font-family:"Bodoni Moda";src:url(font-bodoni-moda.woff2) format("woff2-variations");font-weight:400 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Bodoni Moda";src:url(font-bodoni-moda-italic.woff2) format("woff2-variations");font-weight:400 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Instrument Sans";src:url(font-instrument-sans.woff2) format("woff2-variations");font-weight:400 700;font-style:normal;font-display:swap}
+
+/* ---------- Token ---------- */
+:root{
+  --nero:#111012;          /* la sala di sera */
+  --carta:#f1efea;         /* la tovaglia */
+  --rosso:#a5111a;         /* il numero civico, dal logo */
+  --rosso-hover:#8a0d15;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:clamp(20px,4vw,64px);
+  --maxw:1440px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --bg:var(--nero); --fg:var(--carta);
+  --muted:color-mix(in srgb,var(--fg) 68%,transparent);
+  --line:color-mix(in srgb,var(--fg) 18%,transparent);
+  --nav-h:72px;
+}
+html.theme-light{--bg:var(--carta);--fg:var(--nero)}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:clamp(16px,.35vw + 14.6px,18px);line-height:1.55;overflow-x:clip;transition:background-color .8s var(--ease),color .8s var(--ease);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+em{font-style:italic}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;left:12px;top:-60px;z-index:200;background:var(--rosso);color:#fff;padding:.7em 1.1em;border-radius:99px;text-decoration:none;transition:top .3s var(--ease)}
+.skip:focus{top:12px}
+:focus-visible{outline:2px solid var(--rosso);outline-offset:3px;border-radius:2px}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+section{position:relative}
+
+/* Tipografia */
+.display{font-family:var(--display);font-weight:400;font-optical-sizing:none;font-variation-settings:"opsz" 40;letter-spacing:-.01em;line-height:.95}
+.display em{color:var(--rosso)}
+html:not(.theme-light) .on-dark-em em,.hero .display em{color:#d8313b}
+.h2{font-size:clamp(2.6rem,6.4vw,6.4rem)}
+.lead{font-size:clamp(1.05rem,.6vw + .9rem,1.3rem);line-height:1.5;color:var(--muted);max-width:36ch}
+.small{font-size:.875rem;line-height:1.45}
+.meta{font-size:.8125rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* Bottoni */
+.btn{--b-bg:var(--rosso);--b-fg:#fff;--b-fill:var(--carta);--b-fill-fg:var(--nero);position:relative;display:inline-flex;align-items:center;gap:.7em;padding:1em 1.5em;min-height:48px;border-radius:999px;border:1px solid var(--b-bg);background:var(--b-bg);color:var(--b-fg);font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color .45s var(--ease),border-color .45s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--b-fill);transform:translateY(101%);transition:transform .55s var(--ease);border-radius:inherit}
+.btn:hover::before,.btn:focus-visible::before{transform:translateY(0)}
+.btn:hover,.btn:focus-visible{color:var(--b-fill-fg);border-color:var(--b-fill)}
+.btn svg{width:1.05em;height:1.05em;flex:none;transition:transform .45s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn--ghost{--b-bg:transparent;--b-fg:var(--fg);--b-fill:var(--fg);--b-fill-fg:var(--bg);border-color:var(--line)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.link{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.25em;text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);transition:text-decoration-color .3s}
+.link:hover{text-decoration-color:var(--rosso)}
+
+/* ---------- Ribbon demo ---------- */
+.ribbon{position:absolute;top:0;left:0;right:0;z-index:60;background:var(--rosso);color:#fff;font-size:.75rem;letter-spacing:.04em;text-align:center;padding:.45em var(--gutter)}
+.ribbon a{color:#fff}
+
+/* ---------- Navigazione ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);display:flex;align-items:center;transition:background-color .6s var(--ease),color .6s var(--ease),border-color .6s;border-bottom:1px solid transparent;color:var(--fg)}
+.nav.is-top{top:26px;color:var(--carta)}
+.nav.is-scrolled{background:var(--bg);border-bottom-color:var(--line);top:0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.nav__logo{display:block;width:clamp(128px,11vw,160px);color:inherit}
+.nav__logo svg{display:block;width:100%;height:auto}
+.nav__links{display:flex;gap:clamp(1.2rem,2.2vw,2.4rem);align-items:center}
+.nav__links a:not(.btn){text-decoration:none;font-size:.9375rem;position:relative;padding:.4em 0}
+.nav__links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:.1em;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav__links a:not(.btn):hover::after,.nav__links a[aria-current="true"]::after{transform:scaleX(1);transform-origin:left}
+.nav .btn{padding:.8em 1.2em;min-height:42px}
+.nav__burger{display:none;width:48px;height:48px;border:1px solid color-mix(in srgb,currentColor 30%,transparent);border-radius:99px;background:transparent;cursor:pointer;position:relative}
+.nav__burger span{position:absolute;left:14px;right:14px;height:1.5px;background:currentColor;transition:transform .45s var(--ease),top .45s var(--ease)}
+.nav__burger span:nth-child(1){top:19px}.nav__burger span:nth-child(2){top:27px}
+.nav__burger[aria-expanded="true"] span:nth-child(1){top:23px;transform:rotate(45deg)}
+.nav__burger[aria-expanded="true"] span:nth-child(2){top:23px;transform:rotate(-45deg)}
+.overlay{position:fixed;inset:0;z-index:45;background:var(--nero);color:var(--carta);display:flex;flex-direction:column;justify-content:flex-end;padding:calc(var(--nav-h) + 2rem) var(--gutter) max(2rem,env(safe-area-inset-bottom));visibility:hidden;opacity:0;transition:opacity .45s var(--ease),visibility 0s linear .45s}
+.overlay.is-open{visibility:visible;opacity:1;transition:opacity .45s var(--ease)}
+.overlay nav a{display:block;font-family:var(--display);font-size:clamp(2.6rem,11vw,4.5rem);line-height:1.1;text-decoration:none;padding:.08em 0}
+.overlay__info{margin-top:2rem;display:grid;gap:.3rem;color:color-mix(in srgb,var(--carta) 70%,transparent)}
+.overlay__info a{color:var(--carta)}
+body.menu-open .nav{color:var(--carta);background:transparent;border-color:transparent}
+
+/* Barra azioni mobile */
+.actionbar{display:none}
+
+/* ---------- Hero ---------- */
+.hero{min-height:100svh;display:flex;align-items:flex-end;color:var(--carta);background:var(--nero);overflow:hidden}
+.hero__media{position:absolute;inset:0}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,16,18,.6) 0%,rgba(17,16,18,.12) 26%,rgba(17,16,18,.42) 52%,rgba(17,16,18,.94) 100%),linear-gradient(90deg,rgba(17,16,18,.55) 0%,rgba(17,16,18,0) 62%)}
+.hero__inner{position:relative;z-index:2;width:100%;padding-block:calc(var(--nav-h) + 6rem) clamp(2rem,5vh,3.5rem)}
+.hero__place{margin-bottom:clamp(1rem,2.2vh,1.6rem);color:color-mix(in srgb,var(--carta) 82%,transparent)}
+.hero__title{font-size:clamp(3.4rem,10.4vw,11rem);max-width:12ch;font-weight:460}
+.hero__foot{margin-top:clamp(1.8rem,4vh,3rem);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end;border-top:1px solid color-mix(in srgb,var(--carta) 22%,transparent);padding-top:clamp(1.2rem,2.6vh,1.8rem)}
+.hero__lead{color:color-mix(in srgb,var(--carta) 80%,transparent);max-width:44ch}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:flex-end}
+.hero .btn--ghost{--b-fg:var(--carta);--b-fill:var(--carta);--b-fill-fg:var(--nero);border-color:color-mix(in srgb,var(--carta) 35%,transparent)}
+.status{display:inline-flex;align-items:center;gap:.6em;margin-top:.9rem;font-size:.9375rem;color:color-mix(in srgb,var(--carta) 88%,transparent)}
+.status__dot{width:8px;height:8px;border-radius:50%;background:#8a8a8a;flex:none}
+.status[data-open="true"] .status__dot{background:#4fae6a}
+.status[data-open="false"] .status__dot{background:#d8313b}
+
+/* ---------- Il nome ---------- */
+.nome{padding-block:clamp(6rem,14vw,12rem)}
+.nome__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:end}
+.nome__title{grid-column:1 / span 6;font-size:clamp(3.2rem,9vw,9.5rem)}
+.nome__text{grid-column:8 / span 5;display:grid;gap:1.2rem;align-self:end}
+.nome__text p{max-width:42ch}
+.nome__text p:first-child{font-size:clamp(1.2rem,.8vw + 1rem,1.55rem);line-height:1.45;color:var(--fg)}
+.nome__text p+p{color:var(--muted)}
+.nome__photo{grid-column:1 / span 7;margin-top:clamp(3rem,7vw,6rem);aspect-ratio:4/3;overflow:hidden}
+.nome__photo img{width:100%;height:112%;object-fit:cover}
+.nome__plate{grid-column:9 / span 4;align-self:start;margin-top:clamp(3rem,7vw,6rem);display:grid;gap:1rem}
+.plate{width:clamp(96px,10vw,140px);aspect-ratio:9/19;border:2px solid var(--rosso);border-radius:999px;display:grid;place-items:center;align-content:center;gap:.1em;color:var(--rosso);font-family:var(--display);font-size:clamp(2.2rem,3.4vw,3.2rem);line-height:1}
+.nome__plate figcaption{max-width:28ch}
+
+/* ---------- La cucina (storia) ---------- */
+.cucina{padding-block:clamp(6rem,12vw,10rem)}
+.cucina__intro{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(3rem,6vw,5rem)}
+.story__chapters{display:grid;gap:clamp(4rem,9vw,7rem)}
+.chapter{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:center}
+.chapter__media{grid-column:1 / span 5;aspect-ratio:3/4;overflow:hidden;background:#1d1a18}
+.chapter__media img{width:100%;height:100%;object-fit:cover}
+.chapter__body{grid-column:7 / span 6;display:grid;gap:1.1rem}
+.chapter__num{font-variant-numeric:tabular-nums}
+.chapter__title{font-size:clamp(2.2rem,4.6vw,4.6rem);max-width:14ch}
+.chapter__body p{max-width:40ch;color:var(--muted)}
+/* versione fissata (desktop + motion) */
+.story--pinned .story__chapters{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.story__stage{display:none}
+.story--pinned .story__stage{display:block;height:calc(var(--chapters) * 90vh + 100vh)}
+.story__sticky{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:center;padding-top:var(--nav-h)}
+.story__frame{grid-column:1 / span 5;position:relative;aspect-ratio:3/4;max-height:calc(100vh - var(--nav-h) - 4rem);justify-self:start;height:100%;width:auto;overflow:hidden;background:#1d1a18}
+.story__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
+.story__frame img:first-child{opacity:1}
+.story__texts{grid-column:7 / span 6;position:relative;min-height:22rem}
+.story__text{position:absolute;inset:0;display:grid;align-content:center;gap:1.1rem;opacity:0;visibility:hidden}
+.story__text:first-child{opacity:1;visibility:visible}
+.story__text p{max-width:40ch;color:var(--muted)}
+.story__progress{position:absolute;left:0;right:0;bottom:-3rem;display:flex;align-items:center;gap:1rem}
+.story__bar{flex:1;height:1px;background:var(--line);position:relative;overflow:hidden}
+.story__bar i{position:absolute;inset:0;background:var(--rosso);transform-origin:left;transform:scaleX(0)}
+.story__count{font-variant-numeric:tabular-nums;font-size:.875rem;color:var(--muted);min-width:4.5em;text-align:right}
+
+/* ---------- Versata (immagine piena) ---------- */
+.versata{height:clamp(420px,86vh,900px);overflow:hidden;background:#1d1a18}
+.versata img{width:100%;height:118%;object-fit:cover;object-position:50% 62%}
+
+/* ---------- Menù ---------- */
+.menu{padding-block:clamp(6rem,12vw,10rem)}
+.menu__top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:end;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.menu__top h2{grid-column:1 / span 6}
+.menu__top .menu__intro{grid-column:8 / span 5;display:grid;gap:1rem;justify-items:start}
+.menu__tabs{display:flex;gap:.25rem;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter)}
+.menu__tabs::-webkit-scrollbar{display:none}
+.menu__tab{position:relative;background:none;border:0;padding:1rem .9rem 1.1rem;font-size:1rem;cursor:pointer;color:var(--muted);white-space:nowrap;display:inline-flex;gap:.45em;align-items:baseline;transition:color .3s}
+.menu__tab:first-child{padding-left:0}
+.menu__tab::after{content:"";position:absolute;left:.9rem;right:.9rem;bottom:-1px;height:2px;background:var(--rosso);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.menu__tab:first-child::after{left:0}
+.menu__tab[aria-selected="true"]{color:var(--fg)}
+.menu__tab[aria-selected="true"]::after{transform:scaleX(1)}
+.menu__tab:hover{color:var(--fg)}
+html.js .menu__panel[data-hidden]{display:none}
+html:not(.js) .menu__tabs{display:none}
+.menu__panel:focus-visible{outline-offset:8px}
+.menu__panel-title{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+html:not(.js) .menu__panel-title{position:static;width:auto;height:auto;clip:auto;font-family:var(--display);font-weight:400;font-size:2rem;margin-top:3rem}
+.menu__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(2rem,5vw,5rem)}
+.menu__item{padding-block:1.5rem 1.4rem;border-bottom:1px solid var(--line);display:grid;gap:.35rem;align-content:start}
+.menu__head{display:flex;justify-content:space-between;gap:1.5rem;align-items:baseline}
+.menu__name{font-family:var(--display);font-weight:400;font-size:clamp(1.35rem,1vw + 1rem,1.7rem);line-height:1.15}
+.menu__name sup{font-family:var(--sans);font-size:.55em;color:var(--rosso);margin-left:.1em}
+.menu__tag{font-family:var(--sans);font-size:.7rem;letter-spacing:.06em;border:1px solid var(--line);border-radius:99px;padding:.15em .55em;vertical-align:.35em;margin-left:.35em;color:var(--muted)}
+.menu__price{font-family:var(--display);font-size:clamp(1.3rem,1vw + .9rem,1.6rem);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.menu__desc{color:var(--muted);max-width:52ch}
+.menu__al{font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.menu__al abbr{text-decoration:none;cursor:help;padding-inline:.12em}
+.menu__foot{margin-top:1.5rem;font-size:.875rem;color:var(--muted);max-width:70ch}
+.menu__notes{margin-top:clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);font-size:.875rem;color:var(--muted)}
+.menu__notes>div{grid-column:1 / span 5;display:grid;gap:.5rem}
+.menu__notes details{grid-column:7 / span 6}
+.menu__notes summary{cursor:pointer;color:var(--fg);list-style:none;display:flex;justify-content:space-between;align-items:center;padding-block:.6rem;border-bottom:1px solid var(--line)}
+.menu__notes summary::-webkit-details-marker{display:none}
+.menu__notes summary::after{content:"+";font-size:1.3rem;transition:transform .35s var(--ease)}
+.menu__notes details[open] summary::after{transform:rotate(45deg)}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem 2rem;padding-top:1rem}
+.legend li{display:flex;gap:.8em}
+.legend span{font-variant-numeric:tabular-nums;color:var(--fg);min-width:1.4em}
+
+/* ---------- Galleria ---------- */
+.galleria{padding-block:clamp(6rem,12vw,9rem) 0}
+.galleria__head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.galleria__head p{max-width:34ch;color:var(--muted)}
+.gal{--h:min(62vh,640px)}
+.gal__track{display:flex;gap:clamp(12px,1.6vw,24px);padding-inline:var(--gutter);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:clamp(6rem,12vw,9rem);scrollbar-width:thin}
+.gal__item{flex:none;width:clamp(240px,70vw,420px);scroll-snap-align:start}
+.gal__item:nth-child(even){margin-top:clamp(2rem,6vh,5rem)}
+.gal__item img{width:100%;aspect-ratio:3/4;object-fit:cover;background:#1d1a18}
+.gal--pinned{height:var(--gal-height,300vh)}
+.gal--pinned .gal__sticky{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden}
+.gal--pinned .gal__track{overflow:visible;scroll-snap-type:none;padding-bottom:0;will-change:transform}
+.gal--pinned .gal__item{width:auto;height:var(--h)}
+.gal--pinned .gal__item img{height:100%;width:auto}
+.gal--pinned .gal__item:nth-child(even){margin-top:0;transform:translateY(8vh)}
+.gal--pinned .gal__item:nth-child(odd){transform:translateY(-4vh)}
+
+/* ---------- Sala ---------- */
+.sala{padding-block:clamp(6rem,12vw,10rem)}
+.sala__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem)}
+.sala__title{grid-column:1 / span 7}
+.sala__lead{grid-column:8 / span 4;align-self:end}
+.sala__big{grid-column:1 / span 8;margin-top:clamp(3rem,6vw,5rem);aspect-ratio:16/10;overflow:hidden}
+.sala__big img{width:100%;height:112%;object-fit:cover}
+.sala__tall{grid-column:9 / span 4;margin-top:clamp(10rem,22vw,20rem);aspect-ratio:3/4;overflow:hidden}
+.sala__tall img{width:100%;height:112%;object-fit:cover}
+.prive{grid-column:1 / -1;margin-top:clamp(5rem,10vw,9rem);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:center;border-top:1px solid var(--line);padding-top:clamp(3rem,6vw,5rem)}
+.prive__media{grid-column:1 / span 6;aspect-ratio:5/4;overflow:hidden}
+.prive__media img{width:100%;height:112%;object-fit:cover}
+.prive__body{grid-column:8 / span 5;display:grid;gap:1.2rem;justify-items:start}
+.prive__body h3{font-size:clamp(2.2rem,4.2vw,4.2rem)}
+.prive__body p{color:var(--muted);max-width:40ch}
+.prive__list{display:grid;gap:0;width:100%}
+.prive__list li{padding-block:.8rem;border-top:1px solid var(--line);display:flex;gap:1rem}
+.prive__list li::before{content:"";width:14px;height:1px;background:var(--rosso);margin-top:.8em;flex:none}
+
+/* ---------- Prenota ---------- */
+.prenota{padding-block:clamp(6rem,12vw,10rem)}
+.prenota__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem)}
+.prenota__side{grid-column:1 / span 5;display:grid;gap:1.5rem;align-content:start;position:sticky;top:calc(var(--nav-h) + 2rem);align-self:start}
+.prenota__side .lead{max-width:34ch}
+.tel{display:grid;gap:.2rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.tel a{font-family:var(--display);font-size:clamp(2rem,3.6vw,3.2rem);text-decoration:none;line-height:1.1;width:max-content}
+.tel a:hover{color:var(--rosso)}
+.form{grid-column:7 / span 6;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem 1.5rem}
+.field{display:grid;gap:.45rem;align-content:start}
+.field--full{grid-column:1 / -1}
+.field label,.field legend{font-size:.875rem;font-weight:500}
+.field legend{padding:0;margin-bottom:.45rem}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.req{color:var(--rosso)}
+.input{width:100%;min-height:52px;background:transparent;border:0;border-bottom:1px solid color-mix(in srgb,var(--fg) 35%,transparent);border-radius:0;padding:.7rem 0;font-size:1.0625rem;transition:border-color .3s;appearance:none;-webkit-appearance:none}
+select.input option{color:#111012}
+select.input{background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-size:6px 6px,6px 6px;background-position:calc(100% - 9px) 50%,calc(100% - 3px) 50%;background-repeat:no-repeat;padding-right:1.6rem;cursor:pointer}
+textarea.input{min-height:110px;resize:vertical}
+.input:hover{border-bottom-color:var(--fg)}
+.input:focus{outline:none;border-bottom:2px solid var(--rosso);padding-bottom:calc(.7rem - 1px)}
+.input:focus-visible{outline:none}
+.field.has-error .input{border-bottom-color:var(--rosso)}
+.field.has-error label,.field.has-error legend{color:var(--rosso)}
+.err{font-size:.8125rem;color:var(--rosso);min-height:0}
+.err:empty{display:none}
+.hint{font-size:.8125rem;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:.5rem}
+.pill{position:relative}
+.pill input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.pill span{display:inline-flex;align-items:center;min-height:46px;padding:.6em 1.2em;border:1px solid color-mix(in srgb,var(--fg) 30%,transparent);border-radius:99px;transition:background-color .3s,color .3s,border-color .3s}
+.pill input:checked+span{background:var(--nero);border-color:var(--nero);color:var(--carta)}
+.pill input:focus-visible+span{outline:2px solid var(--rosso);outline-offset:3px}
+.pill:hover span{border-color:var(--fg)}
+.check{display:flex;gap:.8rem;align-items:flex-start;cursor:pointer;font-size:.9375rem}
+.check input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:1px solid color-mix(in srgb,var(--fg) 45%,transparent);border-radius:3px;flex:none;margin:.1rem 0 0;display:grid;place-items:center;cursor:pointer;transition:background-color .2s,border-color .2s}
+.check input:checked{background:var(--rosso);border-color:var(--rosso)}
+.check input:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+.form__submit{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:.5rem}
+.form__submit .hint{max-width:34ch}
+.hp{position:absolute;left:-9999px}
+.done{grid-column:7 / span 6;align-self:start;border-top:2px solid var(--rosso);padding-top:2rem;display:grid;gap:1.2rem}
+.done[hidden]{display:none}
+.done h3{font-size:clamp(2.2rem,4vw,3.6rem)}
+.done dl{display:grid;grid-template-columns:auto 1fr;gap:.5rem 1.5rem;margin:0}
+.done dt{color:var(--muted)}.done dd{margin:0}
+.done .btn{justify-self:start}
+.done__note{font-size:.875rem;color:var(--muted);max-width:52ch;border-left:2px solid var(--line);padding-left:1rem}
+
+/* ---------- Dove siamo ---------- */
+.dove{padding-block:clamp(6rem,12vw,10rem) clamp(4rem,8vw,6rem)}
+.dove__top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:end;margin-bottom:clamp(3rem,6vw,5rem)}
+.dove__top h2{grid-column:1 / span 7}
+.dove__top .dove__addr{grid-column:8 / span 5;display:grid;gap:1.2rem;justify-items:start}
+.dove__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);border-top:1px solid var(--line);padding-top:clamp(2rem,4vw,3rem)}
+.hours{grid-column:1 / span 6}
+.hours table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours caption{text-align:left;margin-bottom:1rem}
+.hours th,.hours td{text-align:left;padding:.75rem 0;border-bottom:1px solid var(--line);font-weight:400}
+.hours td{text-align:right;color:var(--muted)}
+.hours tr.is-today th,.hours tr.is-today td{color:var(--fg)}
+.hours tr.is-today th::after{content:"oggi";margin-left:.7em;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;background:var(--rosso);color:#fff;border-radius:99px;padding:.15em .6em;vertical-align:.12em}
+.contacts{grid-column:8 / span 5;display:grid;gap:1.6rem;align-content:start}
+.contacts div{display:grid;gap:.2rem}
+.contacts a{font-size:clamp(1.15rem,.8vw + .9rem,1.45rem);text-decoration:none;width:max-content;max-width:100%}
+.contacts a:hover{color:#d8313b}
+
+/* ---------- Footer ---------- */
+.footer{padding-block:clamp(3rem,6vw,5rem) max(2rem,env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+.footer__logo{color:var(--carta);width:100%}
+.footer__logo svg{width:100%;height:auto;display:block}
+.footer__row{margin-top:clamp(2rem,4vw,3rem);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;font-size:.875rem;color:var(--muted)}
+.footer__row nav{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.footer__row a{text-decoration:none}
+.footer__row a:hover{color:var(--fg)}
+
+/* ---------- Cursore (solo puntatore fine) ---------- */
+.cursor{position:fixed;left:0;top:0;z-index:90;pointer-events:none;width:92px;height:92px;margin:-46px 0 0 -46px;border-radius:50%;background:var(--rosso);color:#fff;display:grid;place-items:center;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;transform:scale(0);opacity:0}
+@media (hover:none),(pointer:coarse){.cursor{display:none}}
+
+/* ---------- Motion: stati iniziali solo con JS attivo ---------- */
+html.has-motion [data-reveal]{visibility:hidden}
+html.has-motion [data-split]{visibility:hidden}
+html.has-motion [data-hero],html.has-motion .hero__media,html.has-motion #nav{visibility:hidden}
+section[id],main [id]{scroll-margin-top:0}
+.w-mask{display:inline-block;overflow:hidden;vertical-align:top;padding:.12em .04em .22em;margin:-.12em -.04em -.22em}
+.nw{white-space:nowrap}
+.w{display:inline-block;will-change:transform}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  :root{--nav-h:64px}
+  .nav__links{display:none}
+  .nav__burger{display:block}
+  .hero__foot{grid-template-columns:1fr}
+  .hero__actions{justify-content:flex-start}
+  .nome__title,.nome__text,.nome__photo,.nome__plate,
+  .chapter__media,.chapter__body,
+  .menu__top h2,.menu__top .menu__intro,.menu__notes>div,.menu__notes details,
+  .sala__title,.sala__lead,.sala__big,.sala__tall,.prive__media,.prive__body,
+  .prenota__side,.form,.done,
+  .dove__top h2,.dove__top .dove__addr,.hours,.contacts{grid-column:1 / -1}
+  .nome__plate{margin-top:0;grid-template-columns:auto 1fr;align-items:center;gap:1.5rem}
+  .chapter__media{aspect-ratio:4/3}
+  .sala__tall{margin-top:0;aspect-ratio:4/3}
+  .menu__list{grid-template-columns:1fr}
+  .prenota__side{position:static}
+  .form{grid-template-columns:1fr}
+  .legend{grid-template-columns:1fr}
+  .actionbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px max(10px,env(safe-area-inset-bottom));background:var(--nero);border-top:1px solid rgba(241,239,234,.14);transform:translateY(110%);transition:transform .5s var(--ease)}
+  .actionbar.is-visible{transform:none}
+  .actionbar a{display:flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;border-radius:99px;text-decoration:none;font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  .actionbar a:first-child{border:1px solid rgba(241,239,234,.35);color:var(--carta)}
+  .actionbar a:last-child{background:var(--rosso);color:#fff}
+  .footer{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+}
+@media (max-width:560px){
+  .ribbon{font-size:.6875rem}
+  .nav.is-top{top:34px}
+  .hero__title{font-size:clamp(3rem,15vw,4.6rem)}
+  .hero__actions .btn{flex:1 1 auto;justify-content:center}
+  .done dl{grid-template-columns:1fr;gap:.1rem}
+  .done dd{margin-bottom:.6rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs><g id="logo-g" transform="translate(0.000000,1138.000000) scale(0.100000,-0.100000)"><path fill="#A5111A" d="M28540 11309 c-218 -20 -452 -105 -605 -221 -261 -196 -457 -559 -505 -931 -18 -140 -13 -4571 5 -4709 62 -474 355 -893 736 -1054 356 -149 837 -136 1149 33 302 163 545 540 627 973 28 147 28 4664 0 4809 -83 434 -310 782 -625 961 -210 119 -479 166 -782 139z m367 -354 c324 -53 545 -276 658 -665 41 -141 40 -85 40 -2475 0 -2506 3 -2353 -56 -2526 -163 -477 -463 -665 -989 -617 -382 34 -666 311 -761 743 l-24 110 0 2280 0 2280 23 105 c94 426 332 691 682 759 30 6 64 13 75 15 51 10 269 4 352 -9z M28597 10800 c-230 -29 -394 -223 -437 -518 -21 -143 -8 -669 19 -765 51 -185 152 -325 277 -387 64 -31 74 -33 178 -33 153 -1 227 35 319 156 l37 49 0 -334 c0 -440 -10 -495 -105 -597 -95 -101 -286 -116 -405 -31 -76 54 -130 203 -130 358 l0 83 -97 -3 -98 -3 2 -126 c3 -220 79 -375 238 -480 198 -132 480 -100 640 73 63 68 118 170 135 252 7 36 10 338 7 957 -3 893 -3 905 -25 972 -87 276 -284 410 -555 377z m176 -202 c83 -20 161 -136 191 -282 21 -101 23 -587 2 -691 -47 -241 -168 -363 -335 -339 -128 19 -206 104 -254 279 -35 126 -33 650 2 773 63 221 198 310 394 260z M28207 7874 c-4 -4 -7 -607 -7 -1341 0 -1326 0 -1333 20 -1334 11 0 49 0 85 0 36 0 74 0 85 0 19 1 20 10 22 349 l3 347 210 0 c274 0 320 -16 372 -132 22 -51 23 -63 23 -296 0 -133 4 -247 8 -254 12 -18 182 -20 193 -2 12 19 11 439 -1 514 -17 105 -74 203 -147 250 -34 22 -62 42 -62 46 -1 3 23 30 52 60 60 62 98 131 127 234 28 97 31 1067 4 1188 -43 191 -162 308 -369 362 -55 14 -605 22 -618 9z m468 -187 c183 -5 262 -56 306 -197 19 -62 20 -91 19 -603 0 -612 1 -599 -86 -696 -82 -91 -129 -106 -329 -106 l-170 0 -3 794 c-1 498 1 798 8 805 5 8 33 11 72 9 35 -1 117 -4 183 -6z M4908 11290 c-80 -8 -119 -14 -253 -42 -60 -13 -196 -70 -285 -120 -301 -169 -552 -594 -600 -1019 -8 -65 -10 -782 -8 -2374 l4 -2280 22 -97 c163 -707 644 -1094 1326 -1065 422 18 705 166 913 477 158 235 247 478 273 745 8 77 10 779 8 2360 -4 2518 3 2312 -75 2545 -132 398 -399 690 -739 810 -137 48 -414 76 -586 60z m339 -335 c166 -27 317 -106 421 -219 83 -92 116 -148 207 -351 23 -53 47 -144 66 -259 26 -157 30 -4456 4 -4628 -48 -317 -180 -571 -372 -711 -237 -175 -689 -193 -986 -40 -216 112 -396 386 -454 694 -24 128 -28 4553 -4 4699 72 438 344 755 696 809 44 7 87 14 95 16 45 9 248 3 327 -10z M7133 11239 c-7 -7 -8 -21 -3 -38 11 -31 53 -317 86 -586 3 -22 9 -53 14 -70 5 -16 14 -70 20 -120 12 -95 41 -295 65 -455 8 -52 28 -187 45 -300 17 -113 35 -230 40 -260 4 -30 24 -163 44 -295 19 -132 38 -251 41 -264 2 -14 9 -59 15 -100 6 -42 12 -87 15 -101 2 -14 13 -90 25 -170 12 -80 29 -197 40 -260 10 -63 32 -216 49 -340 18 -124 36 -243 40 -265 5 -22 19 -112 31 -200 12 -88 33 -232 47 -320 14 -88 32 -205 40 -260 8 -55 27 -188 43 -295 36 -242 98 -656 110 -730 5 -30 18 -118 29 -195 19 -134 51 -341 72 -470 5 -33 14 -94 20 -135 20 -144 89 -595 94 -617 l5 -23 230 0 c161 0 231 3 236 11 4 7 18 80 31 163 49 309 74 474 88 571 8 55 17 111 20 125 3 14 21 129 41 255 19 127 48 311 64 410 16 99 36 230 44 290 8 61 26 175 40 255 25 143 28 163 46 310 6 41 17 111 25 155 8 44 20 114 26 155 6 41 22 149 36 240 13 91 44 291 68 445 24 154 64 413 89 575 25 162 53 333 61 380 8 47 33 207 56 355 23 149 48 308 55 355 8 47 24 150 35 230 10 80 21 154 23 165 22 111 37 211 51 318 9 71 28 192 41 270 14 78 29 174 34 212 15 110 58 390 78 507 13 74 16 110 8 118 -15 15 -321 13 -333 -2 -6 -7 -13 -35 -17 -63 -4 -27 -11 -79 -16 -115 -5 -36 -12 -85 -15 -110 -4 -25 -10 -58 -15 -75 -5 -16 -14 -70 -20 -120 -7 -49 -23 -160 -36 -245 -13 -85 -26 -173 -29 -195 -3 -22 -10 -60 -15 -85 -5 -25 -19 -115 -30 -200 -12 -85 -25 -177 -30 -205 -5 -27 -12 -66 -14 -85 -84 -553 -95 -623 -107 -680 -4 -25 -18 -108 -29 -185 -34 -234 -41 -278 -50 -325 -5 -25 -12 -67 -15 -93 -4 -27 -8 -56 -10 -65 -3 -19 -22 -149 -29 -202 -10 -71 -25 -167 -40 -250 -8 -47 -22 -139 -31 -205 -8 -66 -20 -147 -26 -180 -5 -33 -12 -76 -14 -95 -3 -19 -9 -55 -14 -80 -11 -52 -23 -133 -52 -345 -11 -82 -27 -197 -35 -255 -9 -58 -18 -123 -20 -145 -17 -151 -54 -435 -74 -575 -6 -36 -19 -137 -30 -225 -11 -88 -25 -194 -30 -235 -6 -41 -15 -111 -21 -155 -6 -44 -14 -105 -19 -135 -5 -30 -21 -155 -37 -278 -32 -264 -47 -308 -58 -176 -6 58 -26 218 -64 509 -11 83 -31 247 -46 366 -14 118 -28 226 -30 240 -6 32 -12 79 -30 234 -13 108 -68 542 -91 715 -21 163 -49 350 -74 510 -16 102 -37 241 -45 310 -18 137 -54 371 -60 380 -2 3 -6 30 -9 60 -3 30 -8 64 -10 75 -2 11 -7 47 -11 80 -3 33 -15 112 -26 175 -10 63 -34 221 -54 350 -19 129 -42 278 -50 330 -8 52 -24 158 -36 235 -11 77 -29 196 -40 265 -11 69 -35 229 -54 355 -30 205 -56 371 -70 445 -2 14 -14 93 -26 175 -52 369 -83 557 -93 573 -10 16 -307 17 -323 1z M78 11229 c-17 -9 -18 -183 -18 -3422 0 -1877 4 -3418 8 -3425 7 -9 49 -12 178 -10 l169 3 3 2600 c3 2486 2 2678 -23 2950 -1 17 -5 37 -8 45 -3 8 -8 49 -11 90 -3 41 -10 118 -16 170 -16 151 -23 276 -16 269 11 -10 60 -187 156 -567 52 -201 91 -324 285 -887 252 -732 307 -890 400 -1160 202 -585 288 -835 336 -975 28 -80 68 -197 90 -260 22 -63 62 -180 89 -260 27 -80 72 -210 100 -290 28 -80 62 -176 75 -215 23 -70 111 -324 305 -885 56 -162 128 -369 159 -460 l57 -165 170 0 169 0 3 3427 2 3428 -22 5 c-13 3 -90 4 -173 3 l-150 -3 -3 -2665 c-2 -1880 0 -2712 8 -2825 9 -132 40 -451 54 -563 2 -15 6 -54 10 -87 4 -33 9 -70 12 -82 2 -13 0 -23 -5 -23 -5 0 -11 10 -14 23 -15 61 -152 566 -177 647 -11 36 -35 124 -54 195 -26 99 -172 541 -219 665 -3 8 -42 125 -87 260 -45 135 -86 254 -91 265 -5 11 -47 133 -93 270 -46 138 -125 372 -176 520 -51 149 -114 335 -140 415 -27 80 -94 278 -150 440 -55 162 -132 387 -170 500 -39 113 -115 338 -171 500 -56 162 -118 347 -139 410 -21 63 -98 288 -170 500 -72 212 -150 439 -172 505 -21 66 -45 123 -51 127 -18 12 -299 9 -319 -3z M10595 11228 c-3 -7 -4 -1552 -3 -3433 l3 -3420 1125 0 1125 0 3 163 2 162 -955 0 -955 0 0 765 0 765 758 2 757 3 0 160 0 160 -757 3 -758 2 0 2180 0 2180 953 2 952 3 0 155 0 155 -1123 3 c-893 2 -1124 0 -1127 -10z"/><path fill="currentColor" d="M18215 11289 c-450 -44 -771 -276 -974 -702 -57 -121 -87 -220 -130 -425 -16 -76 -16 -4641 0 -4726 17 -94 67 -288 85 -332 228 -553 657 -833 1244 -810 160 6 255 20 375 58 356 110 617 411 771 887 8 24 32 153 43 228 15 100 15 4560 0 4670 -54 406 -244 745 -534 955 -139 100 -286 157 -502 193 -60 10 -295 12 -378 4z m416 -343 c37 -8 86 -23 110 -34 24 -10 52 -22 63 -26 39 -14 158 -101 197 -145 134 -149 221 -341 276 -611 16 -79 17 -241 20 -2295 l3 -2210 -21 -125 c-66 -390 -215 -639 -456 -762 -188 -97 -470 -121 -723 -61 -314 73 -553 365 -637 777 -21 101 -33 4255 -13 4538 28 417 213 751 487 883 105 50 139 60 303 89 52 9 328 -3 391 -18z M21730 11287 c-3 -3 -44 -8 -91 -11 -483 -34 -814 -303 -983 -798 -81 -237 -81 -242 -81 -1218 0 -802 1 -871 18 -948 50 -227 176 -418 397 -603 140 -117 476 -354 644 -455 27 -16 88 -52 135 -81 47 -29 113 -66 145 -84 33 -17 71 -39 85 -48 14 -10 78 -48 141 -86 141 -84 402 -262 450 -308 80 -75 139 -174 176 -292 23 -73 29 -841 7 -925 -6 -25 -17 -72 -24 -105 -32 -152 -137 -351 -243 -464 -161 -169 -350 -239 -641 -240 -410 0 -663 154 -826 503 -99 214 -111 297 -110 781 1 209 -3 386 -7 393 -6 9 -49 12 -178 10 l-169 -3 -3 -350 c-5 -657 35 -841 259 -1171 77 -113 269 -276 414 -350 392 -202 949 -192 1308 23 300 179 530 599 567 1038 18 202 8 835 -14 928 -82 351 -324 567 -1191 1067 -371 214 -702 448 -799 566 -102 123 -144 226 -171 411 -24 162 -17 1562 8 1723 67 426 278 661 669 746 62 13 305 7 373 -10 272 -69 405 -193 511 -478 79 -210 86 -276 93 -853 l6 -500 159 -3 c114 -2 162 1 173 10 22 18 13 1012 -10 1145 -102 567 -442 947 -912 1019 -27 4 -54 8 -60 9 -27 6 -221 15 -225 12z M25140 11287 c-3 -3 -45 -8 -95 -11 -482 -36 -814 -310 -980 -809 -80 -241 -80 -243 -80 -1217 l0 -865 27 -99 c64 -232 184 -408 398 -582 276 -224 546 -405 940 -629 409 -232 645 -398 726 -511 105 -146 124 -226 131 -559 14 -629 -60 -907 -307 -1156 -163 -163 -333 -226 -615 -227 -501 -1 -784 232 -921 758 -15 54 -18 136 -23 495 l-6 430 -169 3 c-124 2 -172 -1 -177 -10 -11 -17 -9 -716 2 -826 61 -604 437 -1035 1009 -1158 120 -26 455 -26 585 0 474 95 776 412 914 961 37 144 43 215 48 558 9 592 -31 755 -246 992 -112 124 -462 369 -816 573 -442 254 -789 487 -917 616 -100 100 -168 230 -198 377 -18 88 -20 144 -20 884 -1 788 2 855 35 1016 70 332 313 579 630 639 88 17 306 17 375 0 304 -72 442 -209 552 -545 53 -163 59 -234 65 -775 3 -314 9 -500 15 -507 11 -14 290 -19 322 -7 19 7 24 872 6 1044 -63 603 -411 1041 -890 1120 -41 7 -82 14 -90 15 -36 6 -226 16 -230 12z M13695 11228 c-3 -7 -4 -1552 -3 -3433 l3 -3420 180 0 180 0 3 908 2 908 623 -3 c689 -4 665 -2 814 -73 97 -45 214 -161 262 -260 66 -132 64 -116 70 -830 l6 -650 180 0 180 0 0 630 c0 715 -3 753 -76 912 -10 24 -19 47 -19 52 0 5 -26 49 -58 97 -105 160 -236 257 -434 324 -131 44 -130 44 -76 68 214 94 382 281 494 545 60 143 79 210 109 397 5 31 5 2653 0 2695 -2 17 -6 55 -10 85 -57 483 -375 860 -835 991 -224 64 -187 61 -918 66 -551 4 -673 2 -677 -9z m1435 -347 c353 -87 574 -338 657 -746 24 -120 28 -2663 4 -2795 -59 -326 -245 -568 -566 -734 -149 -77 -172 -80 -697 -84 l-468 -3 0 2196 0 2197 488 -4 c470 -4 490 -4 582 -27z M6577 2069 c-16 -9 -17 -73 -17 -992 0 -540 4 -988 9 -995 5 -9 24 -12 52 -10 l44 3 5 260 5 260 183 3 c222 3 252 -6 298 -84 29 -49 29 -50 32 -246 l4 -198 49 0 c62 0 62 0 57 228 -5 235 -38 310 -155 358 l-33 14 53 53 c29 28 66 79 82 112 l30 60 0 455 0 455 -26 55 c-32 67 -68 112 -123 149 -39 26 -63 34 -179 61 -59 13 -346 12 -370 -1z m404 -109 c62 -12 92 -31 136 -88 59 -78 63 -108 63 -534 0 -461 0 -463 -91 -550 -81 -78 -120 -89 -285 -86 l-129 3 -3 620 c-1 341 0 626 3 633 6 15 226 17 306 2z M8446 2065 c-14 -15 -16 -112 -16 -993 0 -537 4 -983 8 -990 7 -9 80 -12 333 -10 l324 3 3 47 3 48 -278 2 -278 3 -3 195 c-1 107 0 205 3 218 5 22 6 22 220 22 118 0 216 3 216 8 17 96 28 91 -219 94 l-217 3 0 625 0 625 275 5 c151 3 276 7 278 8 10 9 0 91 -12 95 -8 3 -152 6 -319 7 -267 0 -307 -2 -321 -15z M10415 2073 c-89 -22 -154 -81 -206 -189 l-34 -69 0 -305 0 -305 27 -51 c43 -82 181 -193 379 -304 87 -49 172 -105 187 -123 83 -99 63 -401 -32 -505 -82 -91 -268 -96 -361 -11 -73 68 -96 135 -98 292 l-2 132 -54 3 -54 3 5 -158 c4 -148 7 -162 33 -218 35 -72 104 -144 176 -182 79 -41 257 -42 334 -1 142 74 201 200 203 433 2 211 -29 264 -228 390 -315 198 -353 226 -383 285 l-28 54 3 276 3 276 30 59 c44 86 100 119 204 120 180 0 231 -77 241 -360 l5 -170 29 -3 c15 -2 40 -1 54 3 l25 6 -5 167 c-8 261 -55 366 -194 436 -51 26 -191 36 -259 19z M11962 2068 c-18 -18 -15 -85 4 -92 9 -3 71 -6 140 -6 l124 0 2 -947 3 -948 45 0 45 0 3 947 2 947 138 3 137 3 3 44 c2 28 -1 47 -10 52 -22 14 -622 11 -636 -3z M13943 2072 c-7 -4 -21 -66 -33 -137 -11 -72 -25 -155 -30 -185 -6 -30 -14 -86 -20 -125 -5 -38 -23 -160 -40 -270 -40 -256 -55 -353 -85 -550 -13 -88 -31 -200 -39 -250 -17 -98 -52 -335 -60 -401 -3 -23 -6 -45 -7 -50 -5 -28 4 -34 45 -34 54 0 54 0 66 87 5 37 12 84 15 103 3 19 15 98 27 175 11 77 25 148 30 158 8 15 27 17 189 17 209 0 190 12 209 -130 17 -128 60 -393 66 -402 6 -10 91 -11 97 0 3 4 -6 72 -19 152 -13 80 -35 219 -49 310 -42 279 -46 304 -55 340 -4 19 -16 89 -25 155 -9 66 -21 149 -26 185 -6 36 -12 79 -14 95 -2 17 -9 55 -14 85 -18 99 -28 163 -46 300 -14 101 -55 329 -64 353 -9 24 -16 27 -58 27 -27 0 -53 -4 -60 -8z m67 -275 c0 -18 7 -72 14 -122 8 -49 18 -110 21 -135 4 -25 11 -65 16 -90 10 -44 16 -88 39 -260 19 -151 61 -414 69 -440 16 -49 11 -50 -169 -50 -93 0 -171 4 -174 9 -3 4 30 240 73 522 43 283 82 535 86 562 7 52 25 55 25 4z M15483 2073 c-16 -6 -19 -1612 -3 -1707 20 -121 103 -236 209 -288 69 -34 244 -33 315 2 95 46 167 140 195 254 19 79 29 1709 10 1732 -14 17 -88 12 -100 -7 -5 -8 -9 -385 -9 -851 1 -880 1 -887 -44 -953 -46 -68 -93 -94 -184 -102 -145 -12 -240 57 -282 207 -7 22 -10 342 -10 867 0 784 -1 833 -17 841 -19 10 -59 12 -80 5z M17391 2061 c-13 -25 -8 -1968 6 -1982 5 -5 30 -9 54 -7 l44 3 3 263 2 262 188 0 c218 0 247 -9 292 -90 24 -43 25 -54 28 -243 l4 -198 51 3 52 3 0 205 c-1 190 -3 208 -23 251 -25 52 -89 115 -127 125 -34 8 -33 12 26 73 28 29 63 78 78 110 l26 56 3 420 c3 443 -1 501 -41 576 -74 140 -210 191 -495 188 -139 -1 -164 -4 -171 -18z m474 -121 c61 -32 108 -98 124 -176 9 -43 11 -170 9 -454 l-3 -395 -28 -57 c-19 -39 -43 -68 -75 -91 -81 -60 -110 -67 -258 -67 l-134 0 0 636 0 636 158 -4 c145 -3 163 -6 207 -28z M19502 2068 c-8 -11 -72 -390 -97 -578 -9 -69 -13 -92 -44 -282 -17 -97 -35 -219 -41 -270 -7 -51 -16 -115 -20 -143 -38 -234 -61 -383 -80 -515 -12 -85 -24 -167 -27 -182 -5 -27 -4 -28 40 -28 60 0 61 3 85 170 12 80 24 161 27 180 3 19 10 62 14 95 13 102 -2 95 207 95 l184 0 10 -26 c6 -14 10 -40 10 -58 0 -45 48 -361 62 -414 l12 -42 49 0 49 0 -6 43 c-3 23 -10 71 -16 107 -6 36 -13 83 -16 105 -8 64 -53 354 -64 420 -6 33 -20 119 -31 190 -10 72 -33 213 -49 315 -17 102 -44 271 -60 375 -53 339 -69 427 -81 441 -14 18 -103 19 -117 2z m137 -693 c33 -220 65 -445 72 -500 7 -55 16 -108 21 -118 5 -10 6 -27 3 -37 -6 -19 -16 -20 -175 -20 -175 0 -186 3 -171 42 5 13 14 61 20 108 6 47 23 164 37 260 15 96 30 200 34 230 4 30 10 62 14 70 3 8 8 40 10 70 9 83 47 343 53 360 9 21 15 -16 82 -465z M21061 2070 c-8 -4 -10 -302 -9 -1001 l3 -994 45 0 45 0 0 842 c0 652 3 834 12 810 6 -18 27 -81 46 -142 20 -60 65 -195 102 -300 36 -104 81 -235 100 -290 56 -166 120 -351 180 -520 31 -88 72 -209 92 -270 42 -133 44 -135 99 -135 l44 0 -2 1003 -3 1002 -30 2 c-73 4 -67 88 -62 -845 2 -461 7 -849 12 -864 12 -43 -10 -34 -23 10 -6 20 -22 78 -36 127 -13 50 -69 223 -125 385 -56 162 -119 347 -140 410 -142 426 -255 747 -268 762 -15 16 -62 21 -82 8z M22912 2068 c-16 -16 -15 -71 0 -86 8 -8 54 -12 140 -12 l128 0 2 -947 3 -948 45 0 45 0 5 945 5 945 135 5 135 5 3 44 c2 29 -1 47 -10 52 -22 14 -623 10 -636 -3z"/></g></defs>
+  <symbol id="logo-word" viewBox="0 -4 3002 720"><use href="#logo-g"/></symbol>
+  <symbol id="logo-full" viewBox="0 0 3002 1138"><use href="#logo-g"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.4a12 12 0 0 0 6.5 6.5l1.4-2 4 1.4v2.6a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<div class="ribbon" role="note">Anteprima di redesign non ufficiale · il sito attuale è <a href="https://www.noverosso.it/" rel="noopener">noverosso.it</a></div>
+
+<header class="nav is-top" id="nav">
+  <div class="wrap">
+    <a class="nav__logo" href="#top" aria-label="NoveRosso Restaurant, torna all’inizio">
+      <svg viewBox="0 -4 3002 720" aria-hidden="true"><use href="#logo-word"/></svg>
+    </a>
+    <nav class="nav__links" aria-label="Principale">
+      <a href="#cucina">Cucina</a>
+      <a href="#menu">Menù</a>
+      <a href="#sala">Sala</a>
+      <a href="#dove">Dove siamo</a>
+      <a class="btn nav__cta" href="#prenota" data-magnetic>Prenota</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-expanded="false" aria-controls="overlay" aria-label="Apri il menù di navigazione"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="#cucina">Cucina</a>
+    <a href="#menu">Menù</a>
+    <a href="#sala">Sala</a>
+    <a href="#prenota">Prenota</a>
+    <a href="#dove">Dove siamo</a>
+  </nav>
+  <div class="overlay__info small">
+    <a href="tel:+39010312533">010 312533</a>
+    <span>Via Giuseppe Casaregis 9R, Genova</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- 1 · HERO -->
+  <section class="hero" id="top" data-theme="dark" aria-labelledby="hero-title">
+    <div class="hero__media" data-hero-media>
+      <picture>
+        <source media="(max-width: 699px)" srcset="sala-finestre-720.webp 720w, sala-finestre-1200.webp 1200w" sizes="100vw">
+        <img src="hero-sala-1920.webp" srcset="hero-sala-1100.webp 1100w, hero-sala-1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="La sala di NoveRosso la sera: tavoli con tovaglie bianche, lampade accese e bottiglie illuminate in vetrina" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="hero__inner wrap">
+      <p class="hero__place meta" data-hero="place">Genova · Foce · Via Casaregis 9R</p>
+      <h1 class="hero__title display" id="hero-title" data-hero="title">Il gusto ha una <em>nuova</em> <span class="nw"><em>forma</em>.</span></h1>
+      <div class="hero__foot" data-hero="foot">
+        <div>
+          <p class="hero__lead">Cucina italiana contemporanea a due passi da Corso Italia. Un menù unico e stagionale, pasta e pane di nostra produzione, una sala raccolta.</p>
+          <p class="status" id="status" aria-live="polite"><span class="status__dot" aria-hidden="true"></span><span class="status__text">Mercoledì–lunedì · 12:00–14:30 · 19:00–22:30</span></p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn" href="#prenota" data-magnetic>Prenota un tavolo <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#menu" data-magnetic>Leggi il menù</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · IL NOME -->
+  <section class="nome" id="nome" data-theme="light" aria-labelledby="nome-title">
+    <div class="wrap nome__grid">
+      <h2 class="nome__title display" id="nome-title" data-split>Nove, <span class="nw"><em>rosso</em>.</span></h2>
+      <div class="nome__text" data-reveal>
+        <p>A Genova i numeri civici rossi segnano botteghe, laboratori e locali. Il nostro è il 9 rosso di Via Casaregis, in zona Foce, all’angolo con Corso Italia.</p>
+        <p>Dentro, una cucina italiana contemporanea fatta di cura, creatività e attenzione ai dettagli. L’ambiente è raccolto, il servizio attento: un posto dove tornare quando si cercano bellezza, sapore e un’ospitalità sincera.</p>
+      </div>
+      <figure class="nome__photo" data-image-reveal>
+        <img src="facciata-1600.webp" srcset="facciata-800.webp 800w, facciata-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 56vw" width="1600" height="1200" loading="lazy" alt="L’ingresso di NoveRosso in Via Casaregis: vetrata con il logo, piante in vaso e la facciata decorata del palazzo" data-parallax>
+      </figure>
+      <figure class="nome__plate" data-reveal>
+        <div class="plate" aria-hidden="true"><span>9</span><span>R</span></div>
+        <figcaption class="small" style="color:var(--muted)">Lo stesso civico chiude il logo: la “O” finale di NoveRosso è una targa con il 9R.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 · LA CUCINA -->
+  <section class="cucina" id="cucina" data-theme="dark" aria-labelledby="cucina-title">
+    <div class="wrap">
+      <div class="cucina__intro">
+        <h2 class="display h2" id="cucina-title" data-split>La <span class="nw">cucina.</span></h2>
+        <p class="lead" data-reveal>Materia prima, stagione, equilibrio. Quattro cose da sapere prima di sedersi a tavola.</p>
+      </div>
+    </div>
+
+    <div class="story wrap" id="story" style="--chapters:4">
+      <!-- Versione statica: senza JS, mobile, riduzione del movimento -->
+      <div class="story__chapters">
+        <article class="chapter">
+          <figure class="chapter__media"><img src="piatto-stagione-700.webp" srcset="piatto-stagione-700.webp 700w, piatto-stagione-1200.webp 1200w" sizes="(max-width:900px) 100vw, 40vw" width="1200" height="1599" loading="lazy" alt="Piatto fondo bianco visto dall’alto: crema rosa con salsa verde e una viola del pensiero"></figure>
+          <div class="chapter__body"><p class="meta">Stagione</p><h3 class="chapter__title display">Un menù <span class="nw">unico,</span> che segue la stagione.</h3><p>Piatti stagionali che valorizzano materia prima, equilibrio e gusto, con un tocco gourmet. La carta cambia con il momento dell’anno.</p></div>
+        </article>
+        <article class="chapter">
+          <figure class="chapter__media"><img src="piatto-materia-700.webp" srcset="piatto-materia-700.webp 700w, piatto-materia-1200.webp 1200w" sizes="(max-width:900px) 100vw, 40vw" width="1200" height="1599" loading="lazy" alt="Due tranci di carne rosata su piatto bianco con gocce di salsa e due quenelle verdi, vista dall’alto"></figure>
+          <div class="chapter__body"><p class="meta">Materia prima</p><h3 class="chapter__title display">Materie prime <span class="nw">locali,</span> pensiero contemporaneo.</h3><p>Il cappon magro, il gambero viola con la prescinsêua, il canestrello ligure nei dolci: la Liguria resta riconoscibile anche quando la forma cambia.</p></div>
+        </article>
+        <article class="chapter">
+          <figure class="chapter__media"><img src="piatto-fattoqui-700.webp" srcset="piatto-fattoqui-700.webp 700w, piatto-fattoqui-1200.webp 1200w" sizes="(max-width:900px) 100vw, 40vw" width="1200" height="1598" loading="lazy" alt="Nido di pasta al ragù con foglioline di prezzemolo al centro di un piatto bianco, vista dall’alto"></figure>
+          <div class="chapter__body"><p class="meta">Fatto qui</p><h3 class="chapter__title display">Pasta, pane e focaccia di nostra <span class="nw">produzione.</span></h3><p>Lo dice anche la carta, alla voce coperto: pasta, pane e focaccia li prepariamo noi, in cucina.</p></div>
+        </article>
+        <article class="chapter">
+          <figure class="chapter__media"><img src="piatto-richiesta-700.webp" srcset="piatto-richiesta-700.webp 700w, piatto-richiesta-1200.webp 1200w" sizes="(max-width:900px) 100vw, 40vw" width="1200" height="1597" loading="lazy" alt="Dessert cilindrico bianco con decorazione a nido d’ape arancione, su piatto bianco visto dall’alto"></figure>
+          <div class="chapter__body"><p class="meta">Su richiesta</p><h3 class="chapter__title display">Vegetariano e senza glutine, su <span class="nw">richiesta.</span></h3><p>Segnalaci preferenze e intolleranze quando prenoti: prepariamo proposte dedicate. In carta trovi gli allergeni di ogni piatto.</p></div>
+        </article>
+      </div>
+
+      <!-- Versione fissata: desktop con movimento -->
+      <div class="story__stage" aria-hidden="true">
+        <div class="story__sticky">
+          <div class="story__frame">
+            <img src="piatto-stagione-1200.webp" width="1200" height="1599" alt="" loading="lazy">
+            <img src="piatto-materia-1200.webp" width="1200" height="1599" alt="" loading="lazy">
+            <img src="piatto-fattoqui-1200.webp" width="1200" height="1598" alt="" loading="lazy">
+            <img src="piatto-richiesta-1200.webp" width="1200" height="1597" alt="" loading="lazy">
+          </div>
+          <div class="story__texts">
+            <div class="story__text"><p class="meta">Stagione</p><p class="chapter__title display">Un menù <span class="nw">unico,</span> che segue la stagione.</p><p>Piatti stagionali che valorizzano materia prima, equilibrio e gusto, con un tocco gourmet. La carta cambia con il momento dell’anno.</p></div>
+            <div class="story__text"><p class="meta">Materia prima</p><p class="chapter__title display">Materie prime <span class="nw">locali,</span> pensiero contemporaneo.</p><p>Il cappon magro, il gambero viola con la prescinsêua, il canestrello ligure nei dolci: la Liguria resta riconoscibile anche quando la forma cambia.</p></div>
+            <div class="story__text"><p class="meta">Fatto qui</p><p class="chapter__title display">Pasta, pane e focaccia di nostra <span class="nw">produzione.</span></p><p>Lo dice anche la carta, alla voce coperto: pasta, pane e focaccia li prepariamo noi, in cucina.</p></div>
+            <div class="story__text"><p class="meta">Su richiesta</p><p class="chapter__title display">Vegetariano e senza glutine, su <span class="nw">richiesta.</span></p><p>Segnalaci preferenze e intolleranze quando prenoti: prepariamo proposte dedicate. In carta trovi gli allergeni di ogni piatto.</p></div>
+            <div class="story__progress"><div class="story__bar"><i></i></div><span class="story__count">01 / 04</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · IMMAGINE PIENA -->
+  <div class="versata" data-theme="dark" data-image-reveal>
+    <img src="versata-1920.webp" srcset="versata-960.webp 960w, versata-1920.webp 1920w" sizes="100vw" width="1920" height="1080" loading="lazy" alt="Una mano versa la salsa da un pentolino di rame su due tranci di carne con creme verdi" data-parallax>
+  </div>
+
+  <!-- 5 · MENÙ -->
+  <section class="menu" id="menu" data-theme="light" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="menu__top">
+        <h2 class="display h2" id="menu-title" data-split>Il <span class="nw">menù.</span></h2>
+        <div class="menu__intro" data-reveal>
+          <p class="lead">La carta attuale, piatto per piatto. La cucina segue la stagione: piatti e prezzi possono cambiare.</p>
+          <a class="link small" href="https://www.noverosso.it/wp-content/uploads/2026/08/NEW_MENU_NOVEROSSO.pdf" rel="noopener">Carta in PDF da stampare (3,5 MB)</a>
+        </div>
+      </div>
+
+      <div class="menu__tabs" role="tablist" aria-label="Portate">
+          <button class="menu__tab" role="tab" id="tab-antipasti" aria-controls="panel-antipasti" aria-selected="true" tabindex="0">Antipasti</button>
+          <button class="menu__tab" role="tab" id="tab-primi" aria-controls="panel-primi" aria-selected="false" tabindex="-1">Primi</button>
+          <button class="menu__tab" role="tab" id="tab-secondi" aria-controls="panel-secondi" aria-selected="false" tabindex="-1">Secondi</button>
+          <button class="menu__tab" role="tab" id="tab-contorni" aria-controls="panel-contorni" aria-selected="false" tabindex="-1">Contorni</button>
+          <button class="menu__tab" role="tab" id="tab-dolci" aria-controls="panel-dolci" aria-selected="false" tabindex="-1">Dolci</button>
+          <button class="menu__tab" role="tab" id="tab-bevande" aria-controls="panel-bevande" aria-selected="false" tabindex="-1">Bevande</button>
+      </div>
+      <div class="menu__panels">
+          <div class="menu__panel" role="tabpanel" id="panel-antipasti" aria-labelledby="tab-antipasti" tabindex="0">
+            <h3 class="menu__panel-title">Antipasti</h3>
+            <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Carpaccio di cuore di bue</h4><span class="menu__price"><span class="visually-hidden">euro </span>11</span></div>
+              <p class="menu__desc">croccante al basilico, aria di basilico, gel di acqua di pomodoro, olio al carbone</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, soia, latte (incluso lattosio), frutta a guscio.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Soia">6</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Frutta a guscio">8</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Tartare di gambero viola<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>24</span></div>
+              <p class="menu__desc">prescinsêua, croccante maggiorana e limone</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, crostacei, latte (incluso lattosio).</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Crostacei">2</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Cappon magro<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>18</span></div>
+              <p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, pesce, frutta a guscio, anidride solforosa e solfiti, molluschi.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Pesce">4</abbr> · <abbr title="Frutta a guscio">8</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr> · <abbr title="Molluschi">14</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Pavè di patate<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>15</span></div>
+              <p class="menu__desc">tartare di manzo, maionese ai capperi</p><p class="menu__al"><span class="visually-hidden">Allergeni: latte (incluso lattosio).</span><span aria-hidden="true">Allergeni <abbr title="Latte (incluso lattosio)">7</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Tataki di diaframma<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>13</span></div>
+              <p class="menu__desc">insalata di anguria grigliata</p><p class="menu__al"><span class="visually-hidden">Allergeni: latte (incluso lattosio), anidride solforosa e solfiti.</span><span aria-hidden="true">Allergeni <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr></span></p>
+            </li>
+            </ul>
+          </div>
+          <div class="menu__panel" role="tabpanel" id="panel-primi" aria-labelledby="tab-primi" tabindex="0" data-hidden>
+            <h3 class="menu__panel-title">Primi</h3>
+            <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Risotto zafferano e cozze<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>18</span></div>
+              <p class="menu__al"><span class="visually-hidden">Allergeni: latte (incluso lattosio), sedano, anidride solforosa e solfiti, molluschi.</span><span aria-hidden="true">Allergeni <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr> · <abbr title="Molluschi">14</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Spaghetto alle vongole<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>18</span></div>
+              <p class="menu__desc">gel di limone</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, sedano, anidride solforosa e solfiti, molluschi.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr> · <abbr title="Molluschi">14</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Tagliatella al ragù cbt<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>18</span></div>
+              <p class="menu__desc">spuma di Parmigiano, porcini</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, latte (incluso lattosio), sedano, anidride solforosa e solfiti.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Tortelli di coniglio<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>20</span></div>
+              <p class="menu__desc">riduzione di Primitivo, pesca in osmosi</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, latte (incluso lattosio), sedano, anidride solforosa e solfiti.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Pacchero con salsa di peperone bruciato</h4><span class="menu__price"><span class="visually-hidden">euro </span>15</span></div>
+              <p class="menu__desc">salsa alla stracciatella, tarallo sbriciolato, olio al basilico</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, soia, latte (incluso lattosio), frutta a guscio, sedano, senape, semi di sesamo.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Soia">6</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Frutta a guscio">8</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Senape">10</abbr> · <abbr title="Semi di sesamo">11</abbr></span></p>
+            </li>
+            </ul>
+          </div>
+          <div class="menu__panel" role="tabpanel" id="panel-secondi" aria-labelledby="tab-secondi" tabindex="0" data-hidden>
+            <h3 class="menu__panel-title">Secondi</h3>
+            <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Parmigiana di melanzane<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>14</span></div>
+              <p class="menu__desc">salsa al basilico, salsa al pomodoro e salsa al Parmigiano</p><p class="menu__al"><span class="visually-hidden">Allergeni: uova, arachidi, soia, latte (incluso lattosio), frutta a guscio, sedano, senape, semi di sesamo, anidride solforosa e solfiti.</span><span aria-hidden="true">Allergeni <abbr title="Uova">3</abbr> · <abbr title="Arachidi">5</abbr> · <abbr title="Soia">6</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Frutta a guscio">8</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Senape">10</abbr> · <abbr title="Semi di sesamo">11</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Filetto cbt</h4><span class="menu__price"><span class="visually-hidden">euro </span>25</span></div>
+              <p class="menu__desc">gazpacho di pesca, chips di riso</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Suprema di tacchino</h4><span class="menu__price"><span class="visually-hidden">euro </span>15</span></div>
+              <p class="menu__desc">cenere di olive, gel al gin tonic, chips di pelle, fagiolini al limone</p><p class="menu__al"><span class="visually-hidden">Allergeni: anidride solforosa e solfiti.</span><span aria-hidden="true">Allergeni <abbr title="Anidride solforosa e solfiti">12</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Pescato del giorno<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>26</span></div>
+              <p class="menu__desc">vellutata di cocco e curry, mandorle tostate</p><p class="menu__al"><span class="visually-hidden">Allergeni: pesce, frutta a guscio.</span><span aria-hidden="true">Allergeni <abbr title="Pesce">4</abbr> · <abbr title="Frutta a guscio">8</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Polpo<sup>**</sup> cbt<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>18</span></div>
+              <p class="menu__desc">crema di patate, gel di salicornia, maionese al lampone</p><p class="menu__al"><span class="visually-hidden">Allergeni: latte (incluso lattosio), sedano, molluschi.</span><span aria-hidden="true">Allergeni <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Sedano">9</abbr> · <abbr title="Molluschi">14</abbr></span></p>
+            </li>
+            </ul>
+          </div>
+          <div class="menu__panel" role="tabpanel" id="panel-contorni" aria-labelledby="tab-contorni" tabindex="0" data-hidden>
+            <h3 class="menu__panel-title">Contorni</h3>
+            <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Insalata di stagione</h4><span class="menu__price"><span class="visually-hidden">euro </span>7</span></div>
+              
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Finocchio arrostito al burro nocciola</h4><span class="menu__price"><span class="visually-hidden">euro </span>7</span></div>
+              <p class="menu__desc">maionese all’arancia e olio alle erbe</p><p class="menu__al"><span class="visually-hidden">Allergeni: latte (incluso lattosio).</span><span aria-hidden="true">Allergeni <abbr title="Latte (incluso lattosio)">7</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Zucchine trifolate al limone</h4><span class="menu__price"><span class="visually-hidden">euro </span>7</span></div>
+              <p class="menu__desc">menta e mandorle</p><p class="menu__al"><span class="visually-hidden">Allergeni: frutta a guscio.</span><span aria-hidden="true">Allergeni <abbr title="Frutta a guscio">8</abbr></span></p>
+            </li>
+            </ul>
+          </div>
+          <div class="menu__panel" role="tabpanel" id="panel-dolci" aria-labelledby="tab-dolci" tabindex="0" data-hidden>
+            <h3 class="menu__panel-title">Dolci</h3>
+            <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Oltre il Mediterraneo<sup class="menu__star" aria-label="prodotto abbattuto">*</sup> <span class="menu__tag">VEG</span></h4><span class="menu__price"><span class="visually-hidden">euro </span>8</span></div>
+              <p class="menu__desc">mini plumcake alla carruba, cremoso di cocco, fichi neri freschi, crumble alla fava tonka, micro foglie di shiso verde</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, soia, frutta a guscio.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Soia">6</abbr> · <abbr title="Frutta a guscio">8</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Passeggiata nel bosco <span class="menu__tag">SL</span></h4><span class="menu__price"><span class="visually-hidden">euro </span>8</span></div>
+              <p class="menu__desc">biscuit morbido, cremoso alla vaniglia, gel di more selvatiche e gin, cialda di meringa con fiori eduli, salsa tiepida ai mirtilli e pepe di Sichuan, frutti di bosco, micro germogli</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, latte (incluso lattosio).</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Caruggi d’estate<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>8</span></div>
+              <p class="menu__desc">croccante di canestrello ligure, crema ai pinoli tostati, cake morbido con bagna di Corochinato, pesche nettarine cbt, cremoso di cioccolato fondente e foglioline di basilico</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, latte (incluso lattosio), frutta a guscio, anidride solforosa e solfiti.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Frutta a guscio">8</abbr> · <abbr title="Anidride solforosa e solfiti">12</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Oro d’autunno<sup class="menu__star" aria-label="prodotto abbattuto">*</sup> <span class="menu__tag">SG˙˙</span></h4><span class="menu__price"><span class="visually-hidden">euro </span>10</span></div>
+              <p class="menu__desc">finanziere alle nocciole, namelaka leggera di gianduia, gel d’albicocca in purezza, streuzel di caffè e grano saraceno, gelato al mou salato</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, uova, latte (incluso lattosio), frutta a guscio.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Uova">3</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Frutta a guscio">8</abbr></span></p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Giardino sospeso<sup class="menu__star" aria-label="prodotto abbattuto">*</sup></h4><span class="menu__price"><span class="visually-hidden">euro </span>8</span></div>
+              <p class="menu__desc">panna cotta alla camomilla e miele, melone candito, mousse di caprino e yogurt greco, crumble alle mandorle e sale, cialda corallo</p><p class="menu__al"><span class="visually-hidden">Allergeni: cereali contenenti glutine, latte (incluso lattosio), frutta a guscio.</span><span aria-hidden="true">Allergeni <abbr title="Cereali contenenti glutine">1</abbr> · <abbr title="Latte (incluso lattosio)">7</abbr> · <abbr title="Frutta a guscio">8</abbr></span></p>
+            </li>
+            </ul><p class="menu__foot">˙˙ Preparazione realizzata con ingredienti naturalmente privi di glutine, ma prodotta in una cucina dove si lavorano cereali contenenti glutine: non idonea a soggetti affetti da celiachia.</p>
+          </div>
+          <div class="menu__panel" role="tabpanel" id="panel-bevande" aria-labelledby="tab-bevande" tabindex="0" data-hidden>
+            <h3 class="menu__panel-title">Bevande</h3>
+            <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Acqua oligominerale Dolomia</h4><span class="menu__price"><span class="visually-hidden">euro </span>3</span></div>
+              <p class="menu__desc">naturale o frizzante, 70 cl</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Bibite analcoliche</h4><span class="menu__price"><span class="visually-hidden">euro </span>3</span></div>
+              <p class="menu__desc">soft drink</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Birra Mastino · Pils 1291</h4><span class="menu__price"><span class="visually-hidden">euro </span>6</span></div>
+              <p class="menu__desc">Bohemian Pils, Verona, 4,9%, dorata, secca, floreale, 33 cl</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Maltus Faber · Bionda</h4><span class="menu__price"><span class="visually-hidden">euro </span>8</span></div>
+              <p class="menu__desc">Blonde Ale, Genova, 5,0%, dorata, morbida, fruttata, 33 cl</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Maltus Faber · Ambrata</h4><span class="menu__price"><span class="visually-hidden">euro </span>8,5</span></div>
+              <p class="menu__desc">Amber Ale, Genova, 6,2%, ambrata, maltata, note di caramello, 33 cl</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Maso Alto · Selvatica</h4><span class="menu__price"><span class="visually-hidden">euro </span>7</span></div>
+              <p class="menu__desc">India Pale Ale, Trentino, 5,5%, ambrata, luppolo selvatico, note resinose e fruttate, 33 cl</p>
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Caffè</h4><span class="menu__price"><span class="visually-hidden">euro </span>2</span></div>
+              
+            </li><li class="menu__item">
+              <div class="menu__head"><h4 class="menu__name">Servizio e coperto</h4><span class="menu__price"><span class="visually-hidden">euro </span>3</span></div>
+              <p class="menu__desc">pasta, pane e focaccia di nostra produzione</p>
+            </li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="menu__notes">
+        <div>
+          <p><sup style="color:var(--rosso)">*</sup> Prodotto fresco sottoposto ad abbattimento termico secondo normativa. I piatti di pesce sono trattati come previsto dalle normative HACCP (reg. CE 178/2002 e art. 5 reg. CE 852/2004).</p>
+          <p><sup style="color:var(--rosso)">**</sup> In mancanza di prodotti freschi verranno utilizzati prodotti surgelati di prima qualità.</p>
+          <p>Prezzi in euro. Servizio e coperto 3.</p>
+        </div>
+        <details>
+          <summary>Legenda allergeni</summary>
+          <ol class="legend"><li><span>1</span>Cereali contenenti glutine</li><li><span>2</span>Crostacei</li><li><span>3</span>Uova</li><li><span>4</span>Pesce</li><li><span>5</span>Arachidi</li><li><span>6</span>Soia</li><li><span>7</span>Latte (incluso lattosio)</li><li><span>8</span>Frutta a guscio</li><li><span>9</span>Sedano</li><li><span>10</span>Senape</li><li><span>11</span>Semi di sesamo</li><li><span>12</span>Anidride solforosa e solfiti</li><li><span>13</span>Lupini</li><li><span>14</span>Molluschi</li></ol>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · GALLERIA -->
+  <section class="galleria" id="galleria" data-theme="dark" aria-labelledby="gal-title">
+    <div class="wrap galleria__head">
+      <h2 class="display h2" id="gal-title" data-split>Dalla <span class="nw">cucina.</span></h2>
+      <p data-reveal>Alcuni piatti di NoveRosso. Scorri per vederli tutti.</p>
+    </div>
+    <div class="gal" id="gal">
+      <div class="gal__sticky">
+        <ul class="gal__track" aria-label="Fotografie dei piatti">
+          <li class="gal__item"><img src="gal-01-900.webp" srcset="gal-01-560.webp 560w, gal-01-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1199" loading="lazy" alt="Salsa versata da un pentolino su due tranci di carne con creme di piselli"></li>
+          <li class="gal__item"><img src="gal-02-900.webp" srcset="gal-02-560.webp 560w, gal-02-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1199" loading="lazy" alt="Crema rosa con salsa verde e viola del pensiero in un piatto bianco"></li>
+          <li class="gal__item"><img src="gal-03-900.webp" srcset="gal-03-560.webp 560w, gal-03-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1200" loading="lazy" alt="Dessert bianco con cialda a nido d’ape su un piatto ovale"></li>
+          <li class="gal__item"><img src="gal-04-900.webp" srcset="gal-04-560.webp 560w, gal-04-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1200" loading="lazy" alt="Pasta ripiena con salsa arancione e germogli su piatto bianco"></li>
+          <li class="gal__item"><img src="gal-05-900.webp" srcset="gal-05-560.webp 560w, gal-05-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1199" loading="lazy" alt="Nido di pasta al ragù con un germoglio, piatto fondo bianco"></li>
+          <li class="gal__item"><img src="gal-06-900.webp" srcset="gal-06-560.webp 560w, gal-06-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1199" loading="lazy" alt="Tortino dorato con foglie verdi e polvere scura su piatto bianco"></li>
+          <li class="gal__item"><img src="gal-07-900.webp" srcset="gal-07-560.webp 560w, gal-07-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1199" loading="lazy" alt="Piccolo pasticcio in crosta con fiori eduli su piatto bianco"></li>
+          <li class="gal__item"><img src="gal-08-900.webp" srcset="gal-08-560.webp 560w, gal-08-900.webp 900w" sizes="(max-width:900px) 70vw, 30vw" width="900" height="1199" loading="lazy" alt="Involtino con erbe fresche e gocce di salsa rossa su piatto bianco"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · LA SALA -->
+  <section class="sala" id="sala" data-theme="light" aria-labelledby="sala-title">
+    <div class="wrap sala__grid">
+      <h2 class="sala__title display h2" id="sala-title" data-split>Una sala <span class="nw">raccolta.</span></h2>
+      <p class="sala__lead lead" data-reveal>Luce calda sui tavoli, tovaglie bianche, un servizio attento. Un’atmosfera elegante e tranquilla, in zona Foce nel cuore di Genova.</p>
+      <figure class="sala__big" data-image-reveal>
+        <img src="sala-vetrina-1600.webp" srcset="sala-vetrina-900.webp 900w, sala-vetrina-1600.webp 1600w" sizes="(max-width:900px) 100vw, 64vw" width="1600" height="900" loading="lazy" alt="La sala di NoveRosso con le finestre illuminate di blu e il logo sulla vetrata" data-parallax>
+      </figure>
+      <figure class="sala__tall" data-image-reveal>
+        <img src="sala-tavolo-1000.webp" srcset="sala-tavolo-600.webp 600w, sala-tavolo-1000.webp 1000w" sizes="(max-width:900px) 100vw, 30vw" width="1000" height="1333" loading="lazy" alt="Tavolo apparecchiato in primo piano con la lampada accesa e la sala sullo sfondo" data-parallax>
+      </figure>
+
+      <div class="prive" id="prive">
+        <figure class="prive__media" data-image-reveal>
+          <img src="sala-prive-1350.webp" srcset="sala-prive-720.webp 720w, sala-prive-1350.webp 1350w" sizes="(max-width:900px) 100vw, 48vw" width="1350" height="1080" loading="lazy" alt="La sala privé di NoveRosso, con tavoli apparecchiati e la vetrina delle bottiglie" data-parallax>
+        </figure>
+        <div class="prive__body" data-reveal>
+          <h3 class="display">Sala privé e cene <span class="nw">aziendali.</span></h3>
+          <p>Una location adatta a cene aziendali e pranzi di lavoro, con una sala riservata per chi cerca la massima riservatezza.</p>
+          <a class="btn btn--ghost" href="#prenota" data-prive data-magnetic>Richiedi la sala privé <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · PRENOTA -->
+  <section class="prenota" id="prenota" data-theme="light" aria-labelledby="pren-title">
+    <div class="wrap prenota__grid">
+      <div class="prenota__side">
+        <h2 class="display h2" id="pren-title" data-split>Prenota un <span class="nw">tavolo.</span></h2>
+        <p class="lead" data-reveal>Invia una richiesta con giorno, orario e numero di persone. Ti confermiamo la disponibilità per telefono o e-mail.</p>
+        <div class="tel" data-reveal>
+          <span class="meta">Preferisci parlarci?</span>
+          <a href="tel:+39010312533">010 312533</a>
+          <span class="small" style="color:var(--muted)">Mercoledì–lunedì, negli orari di apertura</span>
+        </div>
+      </div>
+
+      <form class="form" id="form" novalidate aria-describedby="form-hint">
+        <div class="field">
+          <label for="f-data">Giorno <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="date" id="f-data" name="data" required aria-describedby="e-data">
+          <p class="err" id="e-data" aria-live="polite"></p>
+        </div>
+
+        <fieldset class="field">
+          <legend>Servizio <span class="req" aria-hidden="true">*</span></legend>
+          <div class="pills">
+            <label class="pill"><input type="radio" name="servizio" value="pranzo" checked><span>Pranzo</span></label>
+            <label class="pill"><input type="radio" name="servizio" value="cena"><span>Cena</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="f-ora">Orario preferito <span class="req" aria-hidden="true">*</span></label>
+          <select class="input" id="f-ora" name="ora" required aria-describedby="e-ora"></select>
+          <p class="err" id="e-ora" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-persone">Persone <span class="req" aria-hidden="true">*</span></label>
+          <select class="input" id="f-persone" name="persone" required aria-describedby="h-persone">
+            <option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9+">9 o più</option>
+          </select>
+          <p class="hint" id="h-persone" hidden>Per gruppi numerosi ti richiamiamo per organizzare la sala.</p>
+        </div>
+
+        <div class="field">
+          <label for="f-nome">Nome e cognome <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="text" id="f-nome" name="nome" autocomplete="name" required aria-describedby="e-nome">
+          <p class="err" id="e-nome" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-tel">Telefono <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" type="tel" id="f-tel" name="telefono" autocomplete="tel" inputmode="tel" required aria-describedby="e-tel">
+          <p class="err" id="e-tel" aria-live="polite"></p>
+        </div>
+
+        <div class="field field--full">
+          <label for="f-mail">E-mail</label>
+          <input class="input" type="email" id="f-mail" name="email" autocomplete="email" aria-describedby="e-mail">
+          <p class="err" id="e-mail" aria-live="polite"></p>
+        </div>
+
+        <div class="field field--full">
+          <label for="f-note">Note</label>
+          <textarea class="input" id="f-note" name="note" rows="3" placeholder="Allergie, intolleranze, richieste vegetariane o senza glutine, occasioni"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label class="check"><input type="checkbox" name="prive" id="f-prive"> <span>Mi interessa la sala privé o una cena aziendale</span></label>
+        </div>
+
+        <div class="field field--full">
+          <label class="check"><input type="checkbox" name="privacy" id="f-privacy" required aria-describedby="e-privacy"> <span>Ho letto l’<a class="link" href="privacy.html">informativa privacy</a> <span class="req" aria-hidden="true">*</span></span></label>
+          <p class="err" id="e-privacy" aria-live="polite"></p>
+        </div>
+
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form__submit">
+          <button class="btn" type="submit" id="f-submit" data-magnetic>Invia la richiesta <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="hint" id="form-hint">La prenotazione è confermata solo dopo la nostra risposta.</p>
+        </div>
+      </form>
+
+      <div class="done" id="done" hidden tabindex="-1" aria-live="polite">
+        <p class="meta">Richiesta pronta</p>
+        <h3 class="display">Grazie, <span id="d-nome">a presto</span>.</h3>
+        <dl id="d-list"></dl>
+        <p class="done__note">Anteprima: in questa demo la richiesta non viene inviata. Nella versione online arriverebbe a contact@noverosso.it e il ristorante risponderebbe per confermare.</p>
+        <button class="btn btn--ghost" type="button" id="d-again">Modifica la richiesta</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · DOVE SIAMO -->
+  <section class="dove" id="dove" data-theme="dark" aria-labelledby="dove-title">
+    <div class="wrap">
+      <div class="dove__top">
+        <h2 class="display h2" id="dove-title" data-split>Via Casaregis <span class="nw"><em>9R</em>.</span></h2>
+        <div class="dove__addr" data-reveal>
+          <p class="lead">16129 Genova, zona Foce, all’angolo con Corso Italia. A due passi dal centro, semplice da raggiungere per chi visita la città e per chi la vive.</p>
+          <a class="btn btn--ghost" href="https://maps.app.goo.gl/9eDoh2nzGqKJ3GFK7" rel="noopener" target="_blank" data-magnetic>Indicazioni su Google Maps <svg aria-hidden="true"><use href="#i-arrow"/></svg><span class="visually-hidden"> (si apre in una nuova scheda)</span></a>
+        </div>
+      </div>
+      <div class="dove__grid">
+        <div class="hours" data-reveal>
+          <table>
+            <caption class="meta">Orari</caption>
+            <tbody id="hours">
+              <tr data-day="1"><th scope="row">Lunedì</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+              <tr data-day="2"><th scope="row">Martedì</th><td>Chiuso</td></tr>
+              <tr data-day="3"><th scope="row">Mercoledì</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+              <tr data-day="4"><th scope="row">Giovedì</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+              <tr data-day="5"><th scope="row">Venerdì</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+              <tr data-day="6"><th scope="row">Sabato</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+              <tr data-day="0"><th scope="row">Domenica</th><td>12:00–14:30 · 19:00–22:30</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="contacts" data-reveal>
+          <div><span class="meta">Telefono</span><a href="tel:+39010312533">010 312533</a></div>
+          <div><span class="meta">E-mail</span><a href="mailto:contact@noverosso.it">contact@noverosso.it</a></div>
+          <div><span class="meta">Instagram</span><a href="https://www.instagram.com/noverosso9r/" rel="noopener" target="_blank">@noverosso9r<span class="visually-hidden"> (si apre in una nuova scheda)</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" data-theme="dark">
+  <div class="wrap">
+    <a class="footer__logo" href="#top" aria-label="NoveRosso Restaurant, torna all’inizio" data-reveal>
+      <svg viewBox="0 -4 3002 720" aria-hidden="true"><use href="#logo-word"/></svg>
+    </a>
+    <div class="footer__row">
+      <span>© <span id="year">2026</span> NoveRosso Restaurant · Via Giuseppe Casaregis 9R, 16129 Genova</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.instagram.com/noverosso9r/" rel="noopener" target="_blank">Instagram</a>
+        <a href="#top">Torna su</a>
+        <a href="https://leonelsancu15-hash.github.io/vertex-studio/" rel="noopener" target="_blank">Concept: Vertex Studio</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="actionbar" id="actionbar">
+  <a href="tel:+39010312533"><svg width="18" height="18" aria-hidden="true"><use href="#i-phone"/></svg>Chiama</a>
+  <a href="#prenota">Prenota</a>
+</div>
+
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+<script src="vendor-gsap.min.js" defer></script>
+<script src="vendor-scrolltrigger.min.js" defer></script>
+<script src="vendor-lenis.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var hasGsap = !!(window.gsap && window.ScrollTrigger);
+  var motion = hasGsap && !reduce;
+  if (!motion) root.classList.remove('has-motion');
+  root.dataset.motionReady = '1';
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  /* ---------- Ora di Genova ---------- */
+  var WEEK = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  var GIORNI = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
+  var CLOSED_DAY = 2; // martedì
+  var LUNCH = [720, 870], DINNER = [1140, 1350]; // 12:00–14:30, 19:00–22:30
+
+  function romeNow() {
+    var parts = {};
+    new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', weekday: 'short', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+      .formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+    return { day: WEEK[parts.weekday], min: (+parts.hour) * 60 + (+parts.minute), iso: parts.year + '-' + parts.month + '-' + parts.day };
+  }
+
+  $('#year').textContent = romeNow().iso.slice(0, 4);
+
+  function updateStatus() {
+    var now = romeNow(), el = $('#status'), text = '', state = 'later';
+    if (now.day !== CLOSED_DAY) {
+      if (now.min < LUNCH[0]) text = 'Oggi aperti · pranzo dalle 12:00';
+      else if (now.min < LUNCH[1]) { text = 'Aperti ora · pranzo fino alle 14:30'; state = 'true'; }
+      else if (now.min < DINNER[0]) text = 'Oggi aperti · cena dalle 19:00';
+      else if (now.min < DINNER[1]) { text = 'Aperti ora · cena fino alle 22:30'; state = 'true'; }
+    }
+    if (!text) {
+      var next = (now.day + 1) % 7;
+      if (next === CLOSED_DAY) next = (next + 1) % 7;
+      var when = next === (now.day + 1) % 7 ? 'domani' : GIORNI[next];
+      text = (now.day === CLOSED_DAY ? 'Oggi chiuso' : 'Chiuso ora') + ' · riapriamo ' + when + ' alle 12:00';
+      state = 'false';
+    }
+    el.dataset.open = state;
+    $('.status__text', el).textContent = text;
+    $$('#hours tr').forEach(function (tr) { tr.classList.toggle('is-today', +tr.dataset.day === now.day); });
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  /* ---------- Menù a schede ---------- */
+  var tabs = $$('.menu__tab');
+  var panelsWrap = $('.menu__panels');
+  function panelOf(tab) { return document.getElementById(tab.getAttribute('aria-controls')); }
+  function selectTab(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      panelOf(t).toggleAttribute('data-hidden', !on);
+    });
+    if (focus) tab.focus();
+    tab.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    if (motion) {
+      gsap.fromTo($$('.menu__item', panelOf(tab)), { y: 14, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .55, stagger: .04, ease: 'power3.out', overwrite: true });
+      ScrollTrigger.refresh();
+    }
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { selectTab(tab, false); });
+    tab.addEventListener('keydown', function (e) {
+      var k = e.key, n = null;
+      if (k === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      else if (k === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (k === 'Home') n = tabs[0];
+      else if (k === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); selectTab(n, true); }
+    });
+  });
+
+  /* ---------- Modulo di prenotazione ---------- */
+  var form = $('#form'), done = $('#done');
+  var fData = $('#f-data'), fOra = $('#f-ora'), fPersone = $('#f-persone');
+  var SLOTS = { pranzo: ['12:00', '12:30', '13:00', '13:30', '14:00'], cena: ['19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00'] };
+  fData.min = romeNow().iso;
+
+  function parseISO(v) { var a = v.split('-'); return new Date(+a[0], +a[1] - 1, +a[2]); }
+  function servizio() { return $('input[name="servizio"]:checked').value; }
+  function fillTimes() {
+    var prev = fOra.value, now = romeNow(), isToday = fData.value === now.iso;
+    var list = SLOTS[servizio()].filter(function (t) {
+      if (!isToday) return true;
+      var p = t.split(':'); return (+p[0]) * 60 + (+p[1]) > now.min + 30;
+    });
+    fOra.innerHTML = '';
+    if (!list.length) {
+      var o = document.createElement('option'); o.value = ''; o.textContent = 'Nessun orario disponibile oggi'; fOra.appendChild(o);
+    } else {
+      list.forEach(function (t) { var o = document.createElement('option'); o.value = t; o.textContent = t; fOra.appendChild(o); });
+      if (list.indexOf(prev) > -1) fOra.value = prev;
+    }
+  }
+  fillTimes();
+  fData.addEventListener('change', function () { fillTimes(); check('data'); });
+  $$('input[name="servizio"]').forEach(function (r) { r.addEventListener('change', function () { fillTimes(); check('ora'); }); });
+  fPersone.addEventListener('change', function () { $('#h-persone').hidden = fPersone.value !== '9+'; });
+
+  var RULES = {
+    data: function () {
+      var v = fData.value;
+      if (!v) return 'Scegli il giorno.';
+      if (v < romeNow().iso) return 'Il giorno è già passato.';
+      if (parseISO(v).getDay() === CLOSED_DAY) return 'Il martedì siamo chiusi: scegli un altro giorno.';
+      return '';
+    },
+    ora: function () { return fOra.value ? '' : 'Per oggi non ci sono più orari: scegli un altro giorno o servizio.'; },
+    nome: function () { return $('#f-nome').value.trim().length > 1 ? '' : 'Scrivi il tuo nome.'; },
+    tel: function () { return $('#f-tel').value.replace(/\D/g, '').length >= 6 ? '' : 'Inserisci un numero di telefono valido.'; },
+    mail: function () { var v = $('#f-mail').value.trim(); return !v || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : 'L’indirizzo e-mail non sembra corretto.'; },
+    privacy: function () { return $('#f-privacy').checked ? '' : 'Serve la presa visione dell’informativa.'; }
+  };
+  var INPUT = { data: fData, ora: fOra, nome: $('#f-nome'), tel: $('#f-tel'), mail: $('#f-mail'), privacy: $('#f-privacy') };
+  function check(key) {
+    var msg = RULES[key](), input = INPUT[key], field = input.closest('.field');
+    field.classList.toggle('has-error', !!msg);
+    input.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    $('#e-' + key).textContent = msg;
+    return !msg;
+  }
+  Object.keys(INPUT).forEach(function (key) {
+    var input = INPUT[key];
+    input.addEventListener('blur', function () { if (input.dataset.touched) check(key); });
+    input.addEventListener('input', function () { input.dataset.touched = '1'; if (input.closest('.field').classList.contains('has-error')) check(key); });
+    input.addEventListener('change', function () { input.dataset.touched = '1'; if (key === 'privacy') check(key); });
+  });
+
+  var fmtDay = new Intl.DateTimeFormat('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.querySelector('.hp').value) return;
+    var firstBad = null;
+    Object.keys(INPUT).forEach(function (key) { if (!check(key) && !firstBad) firstBad = INPUT[key]; });
+    if (firstBad) { firstBad.focus(); return; }
+    var rows = [
+      ['Giorno', fmtDay.format(parseISO(fData.value))],
+      ['Servizio', servizio() === 'pranzo' ? 'Pranzo' : 'Cena'],
+      ['Orario', fOra.value],
+      ['Persone', fPersone.value === '9+' ? '9 o più' : fPersone.value],
+      ['Nome', $('#f-nome').value.trim()],
+      ['Telefono', $('#f-tel').value.trim()]
+    ];
+    if ($('#f-mail').value.trim()) rows.push(['E-mail', $('#f-mail').value.trim()]);
+    if ($('#f-note').value.trim()) rows.push(['Note', $('#f-note').value.trim()]);
+    if ($('#f-prive').checked) rows.push(['Sala privé', 'Sì, da organizzare']);
+    var dl = $('#d-list'); dl.innerHTML = '';
+    rows.forEach(function (r) {
+      var dt = document.createElement('dt'), dd = document.createElement('dd');
+      dt.textContent = r[0]; dd.textContent = r[1]; dl.appendChild(dt); dl.appendChild(dd);
+    });
+    $('#d-nome').textContent = $('#f-nome').value.trim().split(/\s+/)[0];
+    form.hidden = true; done.hidden = false; done.focus({ preventScroll: true });
+    if (motion) { gsap.fromTo(done, { y: 24, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .8, ease: 'power3.out' }); ScrollTrigger.refresh(); }
+  });
+  $('#d-again').addEventListener('click', function () {
+    done.hidden = true; form.hidden = false; fData.focus();
+    if (motion) ScrollTrigger.refresh();
+  });
+  $$('[data-prive]').forEach(function (b) { b.addEventListener('click', function () { $('#f-prive').checked = true; }); });
+
+  /* ---------- Navigazione ---------- */
+  var nav = $('#nav'), bar = $('#actionbar'), hero = $('#top'), burger = $('#burger'), overlay = $('#overlay'), main = $('#main');
+  var lenis = null, ticking = false;
+  function onScroll() {
+    ticking = false;
+    var y = window.scrollY, scrolled = y > 20;
+    nav.classList.toggle('is-scrolled', scrolled);
+    nav.classList.toggle('is-top', !scrolled);
+    bar.classList.toggle('is-visible', y > hero.offsetHeight * .7 && !document.body.classList.contains('menu-open'));
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
+  function setMenu(open) {
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Chiudi il menù di navigazione' : 'Apri il menù di navigazione');
+    overlay.classList.toggle('is-open', open);
+    overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.classList.toggle('menu-open', open);
+    main.inert = open;
+    if (lenis) { open ? lenis.stop() : lenis.start(); }
+    if (open) { var first = $('a', overlay); setTimeout(function () { first.focus(); }, 60); }
+    onScroll();
+  }
+  burger.addEventListener('click', function () { setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) { setMenu(false); burger.focus(); } });
+
+  // Sezione attiva nella navigazione
+  var navLinks = $$('.nav__links a[href^="#"]:not(.btn)');
+  if ('IntersectionObserver' in window) {
+    var ioNav = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        navLinks.forEach(function (a) { a.setAttribute('aria-current', a.getAttribute('href') === '#' + en.target.id ? 'true' : 'false'); });
+      });
+    }, { rootMargin: '-45% 0px -54% 0px' });
+    ['top', 'nome', 'cucina', 'menu', 'galleria', 'sala', 'prenota', 'dove'].forEach(function (id) { ioNav.observe(document.getElementById(id)); });
+
+    // Tema per sezione: carta per i piatti, nero per la sala
+    var ioTheme = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) root.classList.toggle('theme-light', en.target.dataset.theme === 'light');
+      });
+    }, { rootMargin: '-55% 0px -44% 0px' });
+    $$('[data-theme]').forEach(function (s) { ioTheme.observe(s); });
+  }
+
+  /* ---------- Movimento ---------- */
+  if (!motion) {
+    $$('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function () { if (overlay.classList.contains('is-open')) setMenu(false); });
+    });
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true });
+  gsap.defaults({ ease: 'power3.out', duration: .9 });
+
+  lenis = new Lenis({ lerp: .085, smoothWheel: true });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+  gsap.ticker.lagSmoothing(0);
+
+  $$('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      var target = id === '#top' ? 0 : document.querySelector(id);
+      if (target === null) return;
+      e.preventDefault();
+      if (overlay.classList.contains('is-open')) setMenu(false);
+      lenis.scrollTo(target, { duration: 1.4, easing: function (x) { return 1 - Math.pow(1 - x, 4); } });
+      if (target !== 0) { target.setAttribute('tabindex', '-1'); setTimeout(function () { target.focus({ preventScroll: true }); }, 900); }
+    });
+  });
+
+  // Divide in parole mantenendo <em>, testo intero per le tecnologie assistive
+  function split(el) {
+    if (el.dataset.splitDone) return [];
+    el.setAttribute('aria-label', el.textContent.replace(/\s+/g, ' ').trim());
+    var words = [];
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (child) {
+        if (child.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          child.textContent.split(/(\s+)/).forEach(function (part) {
+            if (!part) return;
+            if (!part.trim()) { frag.appendChild(document.createTextNode(' ')); return; }
+            var m = document.createElement('span'), w = document.createElement('span');
+            m.className = 'w-mask'; m.setAttribute('aria-hidden', 'true');
+            w.className = 'w'; w.textContent = part;
+            m.appendChild(w); frag.appendChild(m); words.push(w);
+          });
+          node.replaceChild(frag, child);
+        } else if (child.nodeType === 1 && child.tagName !== 'A') {
+          walk(child);
+        }
+      });
+    })(el);
+    el.dataset.splitDone = '1';
+    return words;
+  }
+
+  // Intro dell'hero
+  var heroWords = split($('#hero-title'));
+  gsap.set(['[data-hero]', '.hero__media', '#nav'], { autoAlpha: 1 });
+  gsap.timeline({ defaults: { ease: 'power4.out' } })
+    .fromTo('.hero__media', { autoAlpha: 0 }, { autoAlpha: 1, duration: 1.3, ease: 'power2.out' }, 0)
+    .fromTo('.hero__media img', { scale: 1.14 }, { scale: 1, duration: 2.4, ease: 'power3.out' }, 0)
+    .from('#nav', { y: -18, autoAlpha: 0, duration: .9 }, .35)
+    .from('[data-hero="place"]', { y: 16, autoAlpha: 0, duration: .8 }, .5)
+    .fromTo(heroWords, { yPercent: 110 }, { yPercent: 0, duration: 1.15, stagger: .06 }, .55)
+    .from('.hero__foot > *', { y: 26, autoAlpha: 0, duration: .9, stagger: .12 }, 1.05);
+
+  // Titoli di sezione parola per parola
+  $$('[data-split]').forEach(function (el) {
+    var words = split(el);
+    gsap.set(el, { autoAlpha: 1 });
+    gsap.fromTo(words, { yPercent: 110 }, { yPercent: 0, duration: 1, stagger: .06, ease: 'power4.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+  });
+
+  $$('[data-reveal]').forEach(function (el) {
+    gsap.set(el, { autoAlpha: 1 });
+    gsap.fromTo(el, { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .95, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+  });
+
+  $$('[data-image-reveal]').forEach(function (fig) {
+    var img = $('img', fig);
+    gsap.timeline({ scrollTrigger: { trigger: fig, start: 'top 85%', once: true } })
+      .fromTo(fig, { clipPath: 'inset(0 0 100% 0)' }, { clipPath: 'inset(0 0 0% 0)', duration: 1.25, ease: 'power4.out' })
+      .fromTo(img, { scale: 1.08 }, { scale: 1, duration: 1.5, ease: 'power3.out' }, 0);
+  });
+
+  $$('[data-parallax]').forEach(function (img) {
+    gsap.fromTo(img, { yPercent: 0 }, { yPercent: -9, ease: 'none', scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: 1.1 } });
+  });
+
+  var mm = gsap.matchMedia();
+  mm.add('(min-width: 901px)', function () {
+    // Storia fissata: un capitolo alla volta
+    var story = $('#story');
+    story.classList.add('story--pinned');
+    var imgs = $$('.story__frame img', story), texts = $$('.story__text', story);
+    var barFill = $('.story__bar i', story), count = $('.story__count', story), n = texts.length;
+    gsap.set(imgs.slice(1), { autoAlpha: 0 });
+    gsap.set(texts.slice(1), { autoAlpha: 0 });
+    var tl = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: {
+        trigger: $('.story__stage', story), start: 'top top', end: 'bottom bottom', scrub: .9,
+        onUpdate: function (self) {
+          barFill.style.transform = 'scaleX(' + self.progress.toFixed(4) + ')';
+          var i = Math.min(n - 1, Math.floor(self.progress * n));
+          count.textContent = '0' + (i + 1) + ' / 0' + n;
+        }
+      }
+    });
+    for (var i = 1; i < n; i++) {
+      var at = i - .5;
+      tl.to(texts[i - 1], { autoAlpha: 0, y: -28, filter: 'blur(6px)', duration: .35 }, at)
+        .fromTo(imgs[i], { autoAlpha: 0, scale: 1.06 }, { autoAlpha: 1, scale: 1, duration: .5 }, at)
+        .fromTo(texts[i], { autoAlpha: 0, y: 28, filter: 'blur(6px)' }, { autoAlpha: 1, y: 0, filter: 'blur(0px)', duration: .4 }, at + .25);
+    }
+    tl.to({}, { duration: .5 });
+
+    // Galleria orizzontale
+    var gal = $('#gal'), track = $('.gal__track', gal);
+    gal.classList.add('gal--pinned');
+    function distance() { return Math.max(0, track.scrollWidth - window.innerWidth); }
+    function setHeight() { gal.style.setProperty('--gal-height', (distance() + window.innerHeight) + 'px'); }
+    setHeight();
+    ScrollTrigger.addEventListener('refreshInit', setHeight);
+    gsap.to(track, { x: function () { return -distance(); }, ease: 'none', scrollTrigger: { trigger: gal, start: 'top top', end: 'bottom bottom', scrub: 1, invalidateOnRefresh: true } });
+
+    return function () {
+      story.classList.remove('story--pinned');
+      gal.classList.remove('gal--pinned');
+      gal.style.removeProperty('--gal-height');
+      ScrollTrigger.removeEventListener('refreshInit', setHeight);
+    };
+  });
+
+  // Pulsanti magnetici e cursore, solo con puntatore preciso
+  if (finePointer) {
+    $$('[data-magnetic]').forEach(function (el) {
+      var xTo = gsap.quickTo(el, 'x', { duration: .45, ease: 'power3.out' }), yTo = gsap.quickTo(el, 'y', { duration: .45, ease: 'power3.out' });
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect();
+        xTo((e.clientX - r.left - r.width / 2) * .22); yTo((e.clientY - r.top - r.height / 2) * .22);
+      });
+      el.addEventListener('pointerleave', function () { xTo(0); yTo(0); });
+    });
+    var cursor = $('.cursor'), cLabel = $('.cursor__label');
+    var cx = gsap.quickTo(cursor, 'x', { duration: .35, ease: 'power3.out' }), cy = gsap.quickTo(cursor, 'y', { duration: .35, ease: 'power3.out' });
+    window.addEventListener('pointermove', function (e) { cx(e.clientX); cy(e.clientY); }, { passive: true });
+    var track2 = $('.gal__track');
+    track2.addEventListener('pointerenter', function () {
+      cLabel.textContent = window.innerWidth > 900 ? 'Scorri' : '';
+      gsap.to(cursor, { scale: 1, autoAlpha: 1, duration: .4 });
+    });
+    track2.addEventListener('pointerleave', function () { gsap.to(cursor, { scale: 0, autoAlpha: 0, duration: .35 }); });
+  }
+
+  function refresh() { ScrollTrigger.refresh(); }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
+  window.addEventListener('load', refresh);
+});
+</script>
+</body>
+</html>
